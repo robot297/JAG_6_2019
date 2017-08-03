@@ -73,11 +73,11 @@ public class Question_5_Add_Exception_Handling {
     //Start of wordCount. Don't change or move this comment
     
     public int wordCount(String sentence) {
-        
+    
         // TODO This code throws a NullPointerException if the String sentence is null.
         // Add a try-catch block to catch the NullPointerException, so and return 0 if the String sentance is null.
         // Don't modify any of the code that's here already.
-        
+    
         String[] words = sentence.split(" ");
         return words.length;
     }

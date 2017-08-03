@@ -21,28 +21,34 @@ public class Question_5_Add_Exception_HandlingTest {
     
     @Test
     public void printLanguageList() throws Exception {
-        
+    
         // Ensure code does not crash
-        
+    
         // Check that code still prints the same output
-        
+    
         try {
-            
+        
             Question_5_Add_Exception_Handling q5 = new Question_5_Add_Exception_Handling();
-    
+        
             PrintUtils.catchStandardOut();   // Catch the program's output
-            
+        
             q5.printLanguageList();
-            
+        
             String out = PrintUtils.resetStandardOut();   // And save it, to chck the program still prints the same data
-    
+        
             assertEquals("printLanguageList should still print the same 3 languages in the same order.", "C#\nSwift\nPython\n", out);
-            
-            
+        
+        
         } catch (NoSuchElementException e) {
-            
+        
             fail("Add try-catch statements to catch the exception thrown in printLanguageList");
         }
+    
+    
+    }
+    
+    @Test
+    public void printLanguageListTryCatch() throws Exception {
         
         
         // Read source code and check that a try-catch statement has been added
@@ -83,15 +89,74 @@ public class Question_5_Add_Exception_HandlingTest {
         
         assertTrue("Add try-catch statements inside the printLanguageList method to catch the exception being thrown",
                 allCode.matches(pattern));
-        
-        
     }
+    
+    
     
     @Test
     public void wordCount() throws Exception {
         // Ensure code does not crash
         // Read source code to check for presence of try-catch block for the specific exception thrown
     
+        try {
+            Question_5_Add_Exception_Handling q5 = new Question_5_Add_Exception_Handling();
+            int words = q5.wordCount("testing one two three");
+            assertEquals("Make sure you don't change the behavior of wordCount. It should still count words.", 4, words);
+            int nowords = q5.wordCount(null);
+            assertEquals("wordCount should return 0 if sentence is null.", 0, nowords);
+    
+        } catch (NullPointerException npe) {
+            fail("Add try-catch statements to catch the exception thrown in wordCount when sentence is null");
+    
+        }
+        
     }
+    
+    
+    @Test
+    public void wordCountTryCatch() throws Exception {
+        
+        // Read source code and check that a try-catch statement has been added
+        // Not something that would be done in a commercial test :)
+        
+        Joiner joiner = Joiner.on(System.getProperty("file.separator"));
+        String path = joiner.join("src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
+        BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+        
+        String line = reader.readLine();
+        
+        StringBuffer allLines = new StringBuffer();
+        
+        boolean inMethod = false;
+        
+        while (line != null) {
+            
+            if (line.contains("Start of wordCount.")) {
+                inMethod = true;
+            }
+            
+            if (line.contains("End of wordCount.")) {
+                break;
+            }
+            
+            if (inMethod) {
+                allLines.append(line);
+            }
+            
+            line = reader.readLine();
+            
+        }
+        
+        String allCode = allLines.toString();
+        
+        String pattern = "[\\S\\s]*catch.*\\(\\s*NullPointerException[\\S\\s]*";
+        
+        assertTrue("Add try-catch statements inside the wordCount method to catch the exception being thrown",
+                allCode.matches(pattern));
+        
+        
+    }
+    
+    
     
 }
