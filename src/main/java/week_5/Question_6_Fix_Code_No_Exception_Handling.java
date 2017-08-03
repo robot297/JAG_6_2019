@@ -1,25 +1,24 @@
 package week_5;
 
 import java.util.LinkedList;
-import java.util.NoSuchElementException;
 
 /**
- *
  
- This program has two example methods. Both throw exceptions.
- 
- Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code.
- 
- For the printLanguageList method, add try-catch statements. In the catch block, print a message that the LinkedList is empty.
- 
- For the wordCount method, add try-catch statements so a NullPointerException is not thrown if the sentence is null. If the sentence is null, return 0.
- 
- */
-public class Question_5_Add_Exception_Handling {
+ This question uses the same code as Question 5 in Question_5_Add_Exception_Handling.java
 
+ Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
+
+ Can you think of a better way to stop this code crashing?
+ 
+ Modify the printLanguageList and wordCount methods program so that the program runs correctly without using a try-catch block.
+
+
+ */
+public class Question_6_Fix_Code_No_Exception_Handling {
+    
     public static void main(String[] args) {
         
-        Question_5_Add_Exception_Handling q5 = new Question_5_Add_Exception_Handling();
+        Question_6_Fix_Code_No_Exception_Handling q5 = new Question_6_Fix_Code_No_Exception_Handling();
         
         // Test the printLanguageList() method
         q5.printLanguageList();
@@ -29,7 +28,7 @@ public class Question_5_Add_Exception_Handling {
         String sentence2 = null;
         int words1 = q5.wordCount(sentence1);
         int words2 = q5.wordCount(sentence2);
-    
+        
         System.out.println(sentence1 + " has this many words: " + words1);
         System.out.println(sentence2 + " has this many words: " + words2);
         
@@ -38,28 +37,24 @@ public class Question_5_Add_Exception_Handling {
     /* Adds some example programming languages to a LinkedList, and then prints them in reverse order.
      */
     
-    //Start of printLanguageList. Don't change or move this comment
-    
     public void printLanguageList() {
         
-        // TODO stop this code crashing by adding exception handling to the method.
-        // Don't modify any of the code or change what is printed.
-        // Add a try-catch block to catch the exception that's thrown.
-        // Your code should still print all the languages, but not crash.
+        // TODO stop this code crashing by modifying it
+        // to check for possible errors before they happen.
+        // Make sure you still print all of the languages from the list.
         
         LinkedList<String> languages = new LinkedList<String>();
         
+        languages.push("JavaScript");
         languages.push("Python");
-        languages.push("Swift");
         languages.push("C#");
-    
+        
         while (true) {
             String oneLanguage = languages.pop();
             System.out.println(oneLanguage);
         }
+        
     }
-    
-    //End of printLanguageList. Don't change or move this comment
     
     
     /* A very simple word count function.
@@ -70,19 +65,15 @@ public class Question_5_Add_Exception_Handling {
     
     Counting words can be a much trickier problem, with various special cases to consider. */
     
-    //Start of wordCount. Don't change or move this comment
-    
     public int wordCount(String sentence) {
         
         // TODO This code throws a NullPointerException if the String sentence is null.
-        // Add a try-catch block to catch the NullPointerException, so and return 0 if the String sentance is null.
-        // Don't modify any of the code that's here already.
+        // Modify this code to test if the String is null before splitting it.
+        // Return 0 if the String is null.
         
         String[] words = sentence.split(" ");
         return words.length;
     }
     
-    //End of wordCount. Don't change or move this comment
-    
-    
 }
+    

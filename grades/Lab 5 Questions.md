@@ -83,35 +83,27 @@ There is a file called recycling-report-main-street.txt in the root
  
  Questions on this subject are common in Java job interviews!
 
-### Question 5 Fix Loop with Exception Handling
+### Question 5 Fix Code with Exception Handling
 
-This code crashes. Can you add exception handling to catch the error and print a message that the 
-LinkedList is empty?
-
-        LinkedList languages = new LinkedList();
-        languages.push("Python");
-        languages.push("Java");
-        languages.push("C#");
-
-        while (true) {
-            String oneLanguage = (String)languages.pop();
-            System.out.println(oneLanguage);
-
-        }
-
-        System.out.println("The list is empty")
-
-Question: what data structure is LinkedList behaving as in this code? Hint: what are push() 
-and pop() used with?
-
+This program has two example methods. Both throw exceptions. 
+ 
+Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code. 
+ 
+For the printLanguageList method, add try-catch statements. In the catch block, print a message that the LinkedList is empty.
+ 
+For the wordCount method, add try-catch statements so a NullPointerException is not thrown if the sentence is null. If the sentence is null, return 0.
+ 
   
 ### Question 6 Fix Loop, No Exception Handling
 
+ This question uses the same code as Question 5 in Question_5_Add_Exception_Handling.java
 
-Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
+ Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
 
-Can you think of a better way to stop this code crashing? Modify this program so that it runs 
-correctly without using a try-catch block.
+ Can you think of a better way to stop this code crashing?
+ 
+ Modify the printLanguageList and wordCount methods program so that the program runs correctly without using a try-catch block.
+
 
 ### Question 7 Coffee Shop
 
