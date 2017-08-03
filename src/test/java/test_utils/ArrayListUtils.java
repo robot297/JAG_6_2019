@@ -7,7 +7,31 @@ import java.util.ArrayList;
  * Convenience methods for working with arraylists
  */
 public class ArrayListUtils {
-
+    
+    
+    /** Generate ArrayList from String arguments
+     */
+    
+    public static ArrayList<String> newStringArrayList(String... items) {
+        ArrayList<String> strings = new ArrayList<>();
+        for (String st : items) {
+            strings.add(st);
+        }
+        
+        return strings;
+    }
+    
+    
+    public static ArrayList<Integer> newIntegerArrayList(Integer... items) {
+        ArrayList<Integer> ints = new ArrayList<>();
+        for (Integer i : items) {
+            ints.add(i);
+        }
+        
+        return ints;
+    }
+    
+    
     /** Utility method to compare data in two ArrayLists.
      * Returns true if both lists are the same length, and
      * have the same strings in the same order. */

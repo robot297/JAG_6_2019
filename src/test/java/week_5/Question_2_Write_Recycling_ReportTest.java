@@ -63,9 +63,7 @@ public class Question_2_Write_Recycling_ReportTest {
             }
             
            String fileContents = lines.toString();
-    
-             //todo finish this
-    
+            
             // Expected file contents
             
             String[] expectedContents = "House 0 recycled 1 crate\nHouse 1 recycled 4 crates\nHouse 2 recycled 2 crates\nHouse 3 recycled 1 crate\nTotal crates recycled: 8".split("\n");

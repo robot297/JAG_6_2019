@@ -1,13 +1,13 @@
 package test_utils;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.UUID;
 
 /**
  * Created by Clara on 8/2/17.
+ * Collection of utility methods for working with files
  */
+
 public class FileUtils {
     
     public static void deleteFile(String filename) {
@@ -31,5 +31,16 @@ public class FileUtils {
     
         }
     }
+
+    public static String uniqueFilename(String prefix) {
+        
+        String tempMsg = "temporary_file_for_testing_please_delete";
+        
+        String tempPrefix = (prefix == null) ? tempMsg : tempMsg + "_" + prefix;
+        
+        return tempPrefix + "_" + UUID.randomUUID().toString() + ".data";
+    }
+    
+    
     
 }

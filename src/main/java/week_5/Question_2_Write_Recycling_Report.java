@@ -6,8 +6,6 @@ import java.io.IOException;
 
 /**
  *
- * fixme
- *
  Start with your recycling truck program from last time.
  Add code so that it writes the data as a report to a file.
  The report file should look like this example.

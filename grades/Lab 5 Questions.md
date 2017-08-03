@@ -33,20 +33,29 @@ Use try-catch blocks for IOException. The try-with-resources version is recommen
 ### Question 3 Read Recycling Report
 
 
-Look for a file called recyclingreport-mainstreet.txt in the Content > Labs tab of D2L.  Drag it into the root directory of your project. This file contains data for a much longer street. Can you read it into your program, process the data, and then display the numbers of the house(s) that recycled the most?
-
-If you haven’t already, add try-catch blocks for IOException to Question 2 and Question 3's programs.  The try-with-resources version is recommended.
-
-
+There is a file called recycling-report-main-street.txt in the root 
+ directory of this project. 
+ 
+ This file contains data for a much longer street. Again, the house numbers correspond to array or ArrayList indexes.
+ Read it into your program, analyze the data, and then display the numbers of the house(s) that recycled the most crates?
+ 
+ Make sure you use try-catch blocks for IOException.
+ 
 
 ### Question 4 Exception Handling
 
-Question: Java doesn't make you deal with possible NullPointerException, or ArrayIndexOutOfBoundsException. These are called unchecked exceptions. So, why does Java insist that you deal with IOException – a checked exception - in some way?   Java's checked vs. unchecked exceptions are unusual and questions on this subject are common in Java job interviews!
+Question: Java doesn't make you deal with possible NullPointerException, or ArrayIndexOutOfBoundsException. 
+These are called unchecked exceptions. 
+
+So, why does Java insist that you deal with IOException – a checked exception - in some way?   
+
+Java's checked vs. unchecked exceptions are unusual and questions on this subject are common in Java job interviews!
 
 
 ### Question 5 Fix Loop with Exception Handling
 
-This code crashes. Can you add exception handling to catch the error and print a message that the LinkedList is empty?
+This code crashes. Can you add exception handling to catch the error and print a message that the 
+LinkedList is empty?
 
         LinkedList languages = new LinkedList();
         languages.push("Python");
@@ -61,7 +70,8 @@ This code crashes. Can you add exception handling to catch the error and print a
 
         System.out.println("The list is empty")
 
-Question: what data structure is LinkedList behaving as in this code? Hint: what are push() and pop() used with?
+Question: what data structure is LinkedList behaving as in this code? Hint: what are push() 
+and pop() used with?
 
   
 ### Question 6 Fix Loop, No Exception Handling
@@ -69,15 +79,18 @@ Question: what data structure is LinkedList behaving as in this code? Hint: what
 
 Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
 
-Can you think of a better way to stop this code crashing? Modify this program so that it runs correctly without using a try-catch block.
+Can you think of a better way to stop this code crashing? Modify this program so that it runs 
+correctly without using a try-catch block.
 
 ### Question 7 Coffee Shop
 
 Write a program that creates a sales report for a coffee shop. The coffee shop will use this at the end of every day to calculate sales, expenses, and profit.
 The coffee shop sells 12 different drinks. The name of each drink, the price the shop charges the customer, and how much it costs to make each drink, are saved in the file coffee.txt, which you'll find in the Assignments section. The data is in the format
+
 name;cost to make;price charged
 As in this example,
 cappuccino;1.56;3.50
+
 So the cappuccino drink costs the coffee shop $1.56 to make, and they charge the customer $3.50.
 Your program should read this data from coffee.txt, and store it in some kind of data structure.
 Next, your program should ask the user how many of each drink were sold today. So, it might ask "How many cappuccino drinks were sold today?" and the user can type in a number. It will need to ask for each drink individually. You'll need to store this data somehow.
