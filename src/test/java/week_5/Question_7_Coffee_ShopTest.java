@@ -1,6 +1,8 @@
 package week_5;
 
+import org.junit.After;
 import org.junit.Test;
+import test_utils.FileUtils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,9 +12,14 @@ import java.io.FileWriter;
 import static org.junit.Assert.*;
 
 /**
- * Created by admin on 8/3/17.
+ * Created by Clara on 8/3/17.
  */
 public class Question_7_Coffee_ShopTest {
+    
+    
+    String testPriceFilename = "temporary_file_for_testing_test_price_data.txt";
+    String testSalesFilename = "temporary_file_for_testing_test_sales_data.txt";
+    String testOutputFile = "temporary_file_for_testing_report.txt";
     
     @Test
     public void salesReport() throws Exception {
@@ -29,19 +36,16 @@ public class Question_7_Coffee_ShopTest {
         String salesData = "Coke:4\n" +
                 "Sprite:7";
     
-        String testPriceFilename = "temporary_file_for_testing_test_price_data.txt";
         FileWriter writer = new FileWriter(testPriceFilename);
         writer.write(priceData);
         writer.close();
     
-        String testSalesFilename = "temporary_file_for_testing_test_sales_data.txt";
         writer = new FileWriter(testSalesFilename);
         writer.write(salesData);
         writer.close();
         
-        String testOutputFile = "temporary_file_for_testing_report.txt";
         
-        // Replace the original files with these testing files
+        // Replace the original filenames with these testing files
     
         q7.output_report_file = testOutputFile;
         q7.sales_data_file = testSalesFilename;
@@ -76,6 +80,7 @@ public class Question_7_Coffee_ShopTest {
             assertEquals("Make sure you write the data in the exact format requested, and verify your math is correct.", expectedSalesReport, data);
             
         } catch (FileNotFoundException f) {
+            
             fail("Write the report to a file called " + originalReportFilename + ". Use the variable output_report_file for the file name.");
         }
         
@@ -85,4 +90,13 @@ public class Question_7_Coffee_ShopTest {
     // detailed tests. Maybe you could write some tests for your methods?
     
     
+    @After
+    public void cleanupFiles() {
+        
+        // Delete temporary files used for the tests.
+        
+        FileUtils.deleteFile(testOutputFile);
+        FileUtils.deleteFile(testPriceFilename);
+        FileUtils.deleteFile(testSalesFilename);
+    }
 }
