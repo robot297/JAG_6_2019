@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.lang.reflect.Method;
 
 import static org.junit.Assert.*;
 
@@ -86,6 +87,26 @@ public class Question_7_Coffee_ShopTest {
         
     }
     
+    
+    @Test
+    public void checkMethodDoesNotThrowException() throws Exception {
+        //Verify readCoffeeDataFiles and writeReportFile do not throw exceptions
+    
+    
+        // TODO verify try-with-resources is used.
+    
+        Class q7 = Class.forName("week_5.Question_7_Coffee_Shop");
+        
+        Method mRead = q7.getMethod("readCoffeeDataFiles", String.class, String.class);
+        assertEquals("Add try-catch blocks to your readCoffeeDataFiles method. Handle any possible exceptions with try-catch statements within the method.", 0, mRead.getExceptionTypes().length);
+    
+        Method mWrite = q7.getMethod("writeReportFile", Object.class, String.class);
+        assertEquals("Add try-catch blocks to your writeReportFile method. Handle any possible exceptions with try-catch statements within the method.", 0, mWrite.getExceptionTypes().length);
+
+        
+    }
+    
+    
     // Since the implementation of the code is mostly up to you, it's impossible for me to write any more
     // detailed tests. Maybe you could write some tests for your methods?
     
@@ -99,4 +120,11 @@ public class Question_7_Coffee_ShopTest {
         FileUtils.deleteFile(testPriceFilename);
         FileUtils.deleteFile(testSalesFilename);
     }
+
+
+    
+    
+
+
 }
+

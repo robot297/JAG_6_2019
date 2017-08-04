@@ -1,5 +1,7 @@
 package week_5;
 
+import java.io.BufferedReader;
+
 /**
  *
  *
@@ -45,7 +47,7 @@ package week_5;
  
  Cappuccino: Sold 100, Expenses $150.60, Revenue $350.00, Profit $190.40
  
- perhaps using this String formatting template...
+ You may wish to use this String formatting template,
  
  "%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f"
  
@@ -55,7 +57,7 @@ package week_5;
  At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks,
  for example, like this,
  
- All Drinks: Total Sold 1000, Expenses $1000, Revenue $2500, Profit $1500
+ All Drinks: Sold 1000, Expenses $1000, Revenue $2500, Profit $1500
  
  You should use try-with-resources exception handling for both file reading, and file writing.
  
