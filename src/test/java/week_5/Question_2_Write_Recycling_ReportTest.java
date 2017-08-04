@@ -82,8 +82,10 @@ public class Question_2_Write_Recycling_ReportTest {
                     "One line per house, in the format 'House 3 recycled 2 crates'. " +
                     "If there's one crate, it should say '1 crate'. Else, use 'crates' ",
                     expectedCounter, expectedContents.length);
-            
-            
+    
+            FileUtils.deleteFile(filename);
+    
+    
         } catch (IOException ioe) {
             // File not found?
             FileUtils.deleteFile(filename);
@@ -91,7 +93,6 @@ public class Question_2_Write_Recycling_ReportTest {
         }
     
     
-        FileUtils.deleteFile(filename);
         
     }
     

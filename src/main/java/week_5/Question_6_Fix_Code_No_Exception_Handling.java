@@ -6,11 +6,11 @@ import java.util.LinkedList;
  
  This question uses the same code as Question 5 in Question_5_Add_Exception_Handling.java
 
- Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
+ Instead of waiting for an exception and catching it, it is usually better to try and prevent problems.
 
  Can you think of a better way to stop this code crashing?
  
- Modify the printLanguageList and wordCount methods program so that the program runs correctly without using a try-catch block.
+ Modify the printLanguageList and wordCount methods program so that both methods work correctly without using a try-catch statements.
 
 
  */

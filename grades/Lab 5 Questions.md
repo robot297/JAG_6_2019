@@ -96,91 +96,145 @@ For the wordCount method, add try-catch statements so a NullPointerException is 
   
 ### Question 6 Fix Loop, No Exception Handling
 
- This question uses the same code as Question 5 in Question_5_Add_Exception_Handling.java
-
- Instead of waiting for an exception and catching, it is usually better to try and prevent problems.
-
- Can you think of a better way to stop this code crashing?
  
- Modify the printLanguageList and wordCount methods program so that the program runs correctly without using a try-catch block.
+This question uses the same code as Question 5 in Question_5_Add_Exception_Handling.java
+
+Instead of waiting for an exception and catching it, it is usually better to try and prevent problems.
+
+Can you think of a better way to stop this code crashing?
+ 
+Modify the printLanguageList and wordCount methods so that both methods work correctly without using a try-catch statements.
 
 
 ### Question 7 Coffee Shop
 
-Write a program that creates a sales report for a coffee shop. The coffee shop will use this at the end of every day to calculate sales, expenses, and profit.
-The coffee shop sells 12 different drinks. The name of each drink, the price the shop charges the customer, and how much it costs to make each drink, are saved in the file coffee.txt, which you'll find in the Assignments section. The data is in the format
+ Write a program that creates a sales report for a coffee shop.
+ The coffee shop will use this at the end of every day to calculate sales, expenses, and profit.
+ 
+ The coffee shop sells 12 different drinks. The name of each drink, the price the shop
+ charges the customer, and how much it costs to make each drink, are saved in the file
+ coffee_price_data.txt. It's in the root directory of this project.
+ 
+ The data is in the format
+ 
+ name;cost to make;price charged
+ 
+ As in this example,
+ 
+ Cappuccino;1.56;3.50
+ 
+ So the cappuccino drink costs the coffee shop $1.56 to make, and they charge the customer $3.50.
+ 
+ The file coffee_sales_data.txt contains the sales data for one day. This file is in the format
+ 
+ name;number sold
+ 
+ As in this example,
+ 
+ Cappuccino;100
+ 
+ The coffee shop sold 100 cappuccino drinks.
+ 
+ 
+ Your program should read this data from coffee_price_data.txt, and coffee_sales_data.txt, and
+ store it all in some kind of data structure.
+ 
+ You should deal with any file-related exceptions properly.
+ 
+ Once you have gathered all the data, generate a report that will be written out to a new file called
+ daily_sales_report.txt. For each drink, record the number of drinks sold, the total that it cost to
+ make the total quantity of those drinks (expenses), and the total amount (revenue) spent by
+ customers on that drink.
+ 
+ So, for example, if the coffee shop sold 100 cappuccinos today, you'll write a line that says
+ 
+ Cappuccino: Sold 100, Expenses $150.60, Revenue $350.00, Profit $190.40
+ 
+ perhaps using this String formatting template...
+ 
+ "%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f"
+ 
+ 
+ And a similar line for each of the drinks. The autograder is looking for this exact format.
+ 
+ At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks,
+ for example, like this,
+ 
+ All Drinks: Total Sold 1000, Expenses $1000, Revenue $2500, Profit $1500
+ 
+ You should use try-with-resources exception handling for both file reading, and file writing.
+ 
+ Use methods to organize your code. The autograder will call the salesReport() method, and will examine
+ the output file your program creates.   The instructor will assess the quality of your code and solution.
+ 
+ You should probably write some extra helper methods for the subtasks of this problem.
+ 
+ Test and comment your code.
 
-name;cost to make;price charged
-As in this example,
-cappuccino;1.56;3.50
+### Question 8 Write your Operating System's name to a file in Another Directory
 
-So the cappuccino drink costs the coffee shop $1.56 to make, and they charge the customer $3.50.
-Your program should read this data from coffee.txt, and store it in some kind of data structure.
-Next, your program should ask the user how many of each drink were sold today. So, it might ask "How many cappuccino drinks were sold today?" and the user can type in a number. It will need to ask for each drink individually. You'll need to store this data somehow.
-You should add input validation so that if the user enters "ten" or "10.4" or -45 then your program will respond appropriately.  You should also deal with any file-related exceptions properly.
-Once you have gathered all the data, generate a report that will be written out to a new file called sales-report.txt. For each drink, record the number of drinks sold, the total that it cost to make those drinks (expenses), and the total amount (revenue) spent by customers on that drink. So, for example, if the coffee shop sold 10 cappuccinos today, you'll write a line that says
-Cappuccino: Sold 10, Expenses $15.60, Revenue $35.00, Profit $19.40
-Your output file should have a similar line for each of the drinks.
-At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks.
-You should use try-with-resources exception handling for both file reading, and file writing.
-Use methods to organize your code.
-Test and comment your code.
-
-### Question 8 Write to Another Directory
-
-All of the code so far has assumed that we are working with a file in the root directory of your project.  But, a file could be anywhere on your system, so Java needs to support reading files anywhere on your computer (and even on remote computers).  Perhaps your program needs several data files, and it would be nice to organize them into one /data directory in your project directory.
-
-There's a /data/ directory in the root of this project. Write a program that creates and stores a test file in this directory.
-
-FileWriter can take a filename as an argument. The filename can only be a file in your current directory. So you can’t say
-
-new FileWriter fw = new FileWriter(“/data/testing.txt”);
-
-But, FileWriter can also take a File object as an argument, and a File object can store a path to a file elsewhere on your system (or even on a remote system).
-
-Here’s how to create a File object;
-
-File f = new File(“/mydirectory/mysubdirectory/textfile.txt”);
-
-Assuming these directories exist, you can create and write that file in this location.  The location is relative to the current directory.  I’ll leave it to you to put these pieces together.
-
-Notice that one file system uses forward slashes, and one uses backslashes, so you'll need to use the correct \ or / for your computer.  Mac is also case-sensitive.
-
-
-[Note: It is possible, but not recommended, to use absolute pathnames, for example
-
-C:\program files\java\textfile.txt on Windows, or
-/users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,
-
-but if you do that, your program will most likely not work on anyone else's computer! ]
-
-
-Make sure you catch and handle any exceptions.
-
-
-### Question 9 Architecture Neutral Code
-
-Java is architecture-neutral and the same code is supposed to run in the same way on PC and Mac and Linux, and anything else a JVM can be installed on, like a TV, Android device, refrigerator, car, toaster...
-
-Until we got to files, all of our code will run the same on any device, and we'd like to maintain that as we work with files.
-
-How can your code know what operating system it is running on, and specify files with backslash or forward slashes?
-
-This does need a little work on the part of the programmer to help code run correctly on different platforms.  How would this help?
-
-http://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
-
-Can you re-write your code above using system properties, so it will run on Windows and Mac?
-
-Test your program on a Windows and Mac computer. There are Macs and PCs in the hallway outside T3050.
-
-
-Write a program that writes the OS name, OS version, OS architecture, and user account name to a file, without hard coding any of these things.  Test your program on a Windows and Mac computer. There are Macs and PC computers in the hallway outside T3050.
-
-
-
-And, please paste a screenshot of your program's output on each platform here:
-
-Mac: Command+Shift+Control+4, drag the crosshairs over the desired area of screen to copy a screenshot to the clipboard. Return to word, press Command+V to paste the screenshot.
-
-PC: in Word's menu, there's an Insert screenshot option, look for the Screen Clipping option.
+ The short version: Write the name of the operating system that's running this code, to a file 
+ called os.txt in the /data/ directory of this project. 
+ 
+ The long version: 
+ 
+ All of the code so far has assumed that we are working with a file in the root directory of your project.  
+ But, a file could be anywhere on your system, so Java needs to support reading files anywhere on your 
+ computer (and even on remote computers).  
+ 
+ Perhaps your program needs several data files, and it would be nice to organize them into one /data directory in your project directory.
+ 
+ There's a /data/ directory in the root of this project. Write a program that creates and stores a test f
+ ile in this directory.
+ 
+ FileWriter can take a filename as an argument. The filename can only be a file in your current directory. 
+ So this doesn't work: 
+ 
+ new FileWriter fw = new FileWriter(“/data/testing.txt”);   // Error
+ 
+ But, FileWriter can also take a File object as an argument, and a File object can store a path to a file 
+ elsewhere on your system (or even on a remote system).
+ 
+ Here’s how to create a File object;
+ 
+ File f = new File(“/mydirectory/mysubdirectory/textfile.txt”);
+ 
+ Assuming these directories exist, you can create and write that file in this location.  The location 
+ is relative to the root directory of your project.  
+ 
+ But before you can write your file, do you know what file system your program is running on? 
+ 
+ Linux, Max, and Unix-based computers use / to separate path components, e.g. /Bob/Documents/homework1.doc 
+ Windows uses backslashes \ to separate path components, e.g. \Bob\Documents\homework1.doc
+ 
+ If you code a forward slash, or backslash, your program will work fine on one systen, but crash on the other.
+ 
+ Java is architecture-neutral and the same code is supposed to run in the same way on PC and Mac and Linux, 
+ and anything else a JVM can be installed on, like a TV, Android device, refrigerator, car, toaster...
+ 
+ Until we got to files, all of our code will run the same on any device, and we'd like to maintain 
+ that as we work with files.
+ 
+ How can your code know what operating system it is running on, and specify files with backslash or 
+ forward slashes?
+ 
+ Java code can get information about the system it running on - system properties - which include the 
+ file path separator for the current system, the name and version of the operating system, and various others,
+ 
+ http://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
+ 
+ Make sure you catch and handle any exceptions.
+ 
+ To recap: write a program that writes the name of the operating system running your code to 
+ a file called os.txt in the /data directory of your project; your code should work on Mac/Linux and Windows.
+ 
+ 
+ Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
+ 
+ 
+ [(Note: It is possible, but not recommended, to use absolute pathnames, for example
+ 
+ C:\program files\java\textfile.txt on Windows, or
+ /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,
+ 
+ but if you do that, your program will almost certainly not work on anyone else's computer! )
