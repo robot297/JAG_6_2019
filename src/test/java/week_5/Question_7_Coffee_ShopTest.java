@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 import static org.junit.Assert.*;
 
@@ -15,22 +16,43 @@ public class Question_7_Coffee_ShopTest {
     
     @Test
     public void salesReport() throws Exception {
+    
+        Question_7_Coffee_Shop q7 = new Question_7_Coffee_Shop();
         
-        //Example input files
+        String originalReportFilename = q7.output_report_file;
+        
+        //Create some example input files
         
         String priceData = "Coke;0.1;2\n" +
                 "Sprite;0.2;2.50";
         
         String salesData = "Coke:4\n" +
                 "Sprite:7";
+    
+        String testPriceFilename = "temporary_file_for_testing_test_price_data.txt";
+        FileWriter writer = new FileWriter(testPriceFilename);
+        writer.write(priceData);
+        writer.close();
+    
+        String testSalesFilename = "temporary_file_for_testing_test_sales_data.txt";
+        writer = new FileWriter(testSalesFilename);
+        writer.write(salesData);
+        writer.close();
         
+        String testOutputFile = "temporary_file_for_testing_report.txt";
+        
+        // Replace the original files with these testing files
+    
+        q7.output_report_file = testOutputFile;
+        q7.sales_data_file = testSalesFilename;
+        q7.price_data_file = testPriceFilename;
+    
         // Contents of expected sales report, based on the data above
         
         String expectedSalesReport = "Coke: Sold 4, Expenses $0.40, Revenue $8.00, Profit $7.60\n" +
                 "Sprite: Sold 7, Expenses $1.40, Revenue $17.50, Profit $16.10\n" +
                 "All Drinks: Sold 13, Expenses $1.80, Revenue $25.50, Profit $23.70";
         
-        Question_7_Coffee_Shop q7 = new Question_7_Coffee_Shop();
         
         q7.salesReport();
         
@@ -54,7 +76,7 @@ public class Question_7_Coffee_ShopTest {
             assertEquals("Make sure you write the data in the exact format requested, and verify your math is correct.", expectedSalesReport, data);
             
         } catch (FileNotFoundException f) {
-            fail("Write the report to a file called " + q7.output_report_file + ". Use the variable output_report_file for the file name.");
+            fail("Write the report to a file called " + originalReportFilename + ". Use the variable output_report_file for the file name.");
         }
         
     }
