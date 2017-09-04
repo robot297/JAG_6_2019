@@ -37,7 +37,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     /* Adds some example programming languages to a LinkedList, and then prints them in reverse order.
      */
     
-    //Start of printLanguageList. Don't change or move this comment. The autograder needs it
+    //Start of printLanguageList. Don't change or move this comment. The Autograder needs it.
     
     public void printLanguageList() {
         
@@ -57,7 +57,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
         }
     }
     
-    //Start of printLanguageList. Don't change or move this comment. The Autograder needs it
+    //Start of printLanguageList. Don't change or move this comment. The Autograder needs it.
    
     
     /* A very simple word count function.
@@ -68,7 +68,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     
     Counting words can be a much trickier problem, with various special cases to consider. */
     
-    //Start of wordCount. Don't change or move this comment, the autograder needs it
+    //Start of wordCount. Don't change or move this comment, the Autograder needs it.
     
     public int wordCount(String sentence) {
         

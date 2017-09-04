@@ -6,13 +6,15 @@ import java.util.NoSuchElementException;
 /**
  *
  
- This program has two example methods. Both throw exceptions.
+ This program has two example methods. Both throw exceptions when you run the code.
  
  Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code.
  
- For the printLanguageList method, add try-catch statements. In the catch block, print a message that the LinkedList is empty.
+ For the printLanguageList method, add try-catch statements.
+ In the catch block, print a message that the LinkedList is empty. You don't need to do anything else, just let the method return.
  
- For the wordCount method, add try-catch statements so a NullPointerException is not thrown if the sentence is null. If the sentence is null, return 0.
+ For the wordCount method, add try-catch statements so the NullPointerException thrown when the list is empty, is caught.
+ In the catch block, return 0. So if the sentence is null, your method will return 0.
  
  */
 public class Question_5_Add_Exception_Handling {
@@ -38,13 +40,13 @@ public class Question_5_Add_Exception_Handling {
     /* Adds some example programming languages to a LinkedList, and then prints them in reverse order.
      */
     
-    //Start of printLanguageList. Don't change or move this comment
+    //Start of printLanguageList. Don't change or move this comment. The Autograder needs it.
     
     public void printLanguageList() {
         
         // TODO stop this code crashing by adding exception handling to the method.
         // Don't modify any of the code or change what is printed.
-        // Add a try-catch block to catch the exception that's thrown.
+        // Add a try-catch block to catch the NoSuchElementException that's thrown.
         // Your code should still print all the languages, but not crash.
         
         LinkedList<String> languages = new LinkedList<String>();
@@ -59,7 +61,7 @@ public class Question_5_Add_Exception_Handling {
         }
     }
     
-    //End of printLanguageList. Don't change or move this comment
+    //End of printLanguageList. Don't change or move this comment. The Autograder needs it.
     
     
     /* A very simple word count function.
@@ -68,9 +70,10 @@ public class Question_5_Add_Exception_Handling {
     For this program, each word is assumed to be separated by a single space character.
     If the String sentence is null, this method should return 0.
     
-    Counting words can be a much trickier problem, with various special cases to consider. */
+    Counting words in real-world applications can be a much trickier
+    problem, with various special cases to consider. */
     
-    //Start of wordCount. Don't change or move this comment
+    //Start of wordCount. Don't change or move this comment.  The Autograder needs it.
     
     public int wordCount(String sentence) {
     
@@ -82,7 +85,7 @@ public class Question_5_Add_Exception_Handling {
         return words.length;
     }
     
-    //End of wordCount. Don't change or move this comment
+    //End of wordCount. Don't change or move this comment.  The Autograder needs it.
     
     
 }

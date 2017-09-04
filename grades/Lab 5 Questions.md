@@ -87,15 +87,17 @@ There is a file called recycling-report-main-street.txt in the root
 
 ### Question 5 Fix Code with Exception Handling
 
-This program has two example methods. Both throw exceptions. 
+ This program has two example methods. Both throw exceptions when you run the code.
  
-Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code. 
+ Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code.
  
-For the printLanguageList method, add try-catch statements. In the catch block, print a message that the LinkedList is empty.
+ For the printLanguageList method, add try-catch statements. 
+ In the catch block, print a message that the LinkedList is empty. You don't need to do anything else, just let the method return.
  
-For the wordCount method, add try-catch statements so a NullPointerException is not thrown if the sentence is null. If the sentence is null, return 0.
+ For the wordCount method, add try-catch statements so the NullPointerException thrown when the list is empty, is caught.
+ In the catch block, return 0. So if the sentence is null, your method will return 0.
  
-  
+ 
 ### Question 6 Fix Loop, No Exception Handling
 
  

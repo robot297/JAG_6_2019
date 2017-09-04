@@ -35,10 +35,10 @@ public class Question_5_Add_Exception_HandlingTest {
             q5.printLanguageList();
         
             String out = PrintUtils.resetStandardOut();   // And save it, to chck the program still prints the same data
-        
-            assertEquals("printLanguageList should still print the same 3 languages in the same order.", "C#\nSwift\nPython\n", out);
-        
-        
+    
+            assertTrue("printLanguageList should still print the same 3 languages in the same order.", out.contains("C#\nSwift\nPython\n"));
+    
+    
         } catch (NoSuchElementException e) {
         
             fail("Add try-catch statements to catch the exception thrown in printLanguageList");
@@ -49,7 +49,6 @@ public class Question_5_Add_Exception_HandlingTest {
     
     @Test
     public void printLanguageListTryCatch() throws Exception {
-        
         
         // Read source code and check that a try-catch statement has been added
         // Not something that would be done in a commercial test :)

@@ -4,12 +4,12 @@ package week_5;
  *
  * Read the following, and answer the questions by filling in the Strings in the code.
  
- Java doesn't make you deal with possible NullPointerException,or ArrayIndexOutOfBoundsException in your code.
- If these exceptions happen, and are not caught, your code crashes.
+ Java doesn't make you deal with possible NullPointerException, or ArrayIndexOutOfBoundsException in your code.
+ If these exceptions happen, and are not caught, your program crashes.
  NullPointerException, ArrayIndexOutOfBoundsException, and several other exceptions, are called unchecked exceptions.
  
  It's possible to add try-catch blocks for NullPointerException, and other unchecked exceptions.
- You can also declare that a method throws NullPointerException.
+ You can also declare that a method throws NullPointerException, or any other unchecked exception
  
  But, Java insists that you deal with IOException – which is a checked exception - in some way.
  The compiler checks that you have indeed done something about code that can throw IOException.

@@ -21,7 +21,7 @@ public class Question_4_Exception_Handling_QuestionsTest {
         assertTrue("Answer question 3, ", q4.q3_your_opinion_on_java_having_checked_and_unchecked_exceptions.length() > 15);
         
         for (String answer : q4.q4_why_is_it_better_to_anticipate_and_prevent_errors) {
-            assertTrue("Answer question 4, ", answer.length() > 15);
+            assertTrue("Answer question 4 with at least 2 reasons, ", answer.length() > 15);
         }
     }
     

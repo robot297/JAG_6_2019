@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 /**
- * Created by admin on 8/3/17.
+ * Created by clara on 8/3/17.
  */
 public class Question_3_Read_Recycling_ReportTest {
     
