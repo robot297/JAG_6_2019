@@ -1,7 +1,5 @@
 package week_5;
 
-import java.io.BufferedReader;
-
 /**
  *
  *

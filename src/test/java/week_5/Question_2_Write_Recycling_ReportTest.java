@@ -5,7 +5,6 @@ import test_utils.FileUtils;
 
 import java.io.*;
 import java.lang.reflect.Method;
-import java.util.UUID;
 
 import static org.junit.Assert.*;
 
@@ -29,20 +28,20 @@ public class Question_2_Write_Recycling_ReportTest {
         
         Question_2_Write_Recycling_Report writeReport = new Question_2_Write_Recycling_Report();
         
-        String filename =  "recycling_report_" + UUID.randomUUID().toString() + ".txt";  // Random filename to avoid clashing with student's file
+        String filename = FileUtils.uniqueFilename("recycling_report"); // Random filename to avoid clashing with student's file
         
         writeReport.writeReport(crates, total, filename);
     
         // How large is the file?
         File file = new File(filename);
-        if (file.length() > 5000) {   // An arbitrary number... This file should not be more than 10KB, and for this test data, would be expected to be less than 1KB
-            FileUtils.deleteFile(filename);
+        if (file.length() > 5000) {   // A somewhat arbitrary number... This file should not be more than 10KB, and for this test data, would be expected to be less than 1KB
+            FileUtils.moveToTemporaryTestFolder(filename);
             fail("The output file is too large. Make sure you only write the recycling data, one line per house.");
         }
         
         if (file.length() == 0)  {
             // No data in file, or file doesn't exist
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
             fail("File not found, or no data in the file. Write the data to a file called " + writeReport.filename);
         }
         
@@ -83,12 +82,12 @@ public class Question_2_Write_Recycling_ReportTest {
                     "If there's one crate, it should say '1 crate'. Else, use 'crates' ",
                     expectedCounter, expectedContents.length);
     
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
     
     
         } catch (IOException ioe) {
             // File not found?
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
             fail("Write data to a file called " + writeReport.filename);
         }
     

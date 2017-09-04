@@ -1,5 +1,7 @@
 package week_5;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.io.*;
 
 /**
@@ -42,6 +44,17 @@ public class Question_1_Write_Name_Color_Class_Code {
 
         // TODO write the three pieces of information to the file given by filename.
         // TODO Add try-catch blocks to this method. This method should NOT declare that it throws IOException or any other file exceptions.
+    
+    
+        try {
+            FileWriter w = new FileWriter(filename);
+            w.write(name + "\n");
+            w.write(favoriteColor + "\n");
+            w.write(classCode + ""+ "\n");
+            w.close();
+        } catch (Exception e) {
+        
+        }
         
     }
 

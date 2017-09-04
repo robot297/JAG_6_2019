@@ -116,9 +116,9 @@ public class Question_7_Coffee_ShopTest {
         
         // Delete temporary files used for the tests.
         
-        FileUtils.deleteFile(testOutputFile);
-        FileUtils.deleteFile(testPriceFilename);
-        FileUtils.deleteFile(testSalesFilename);
+        FileUtils.moveToTemporaryTestFolder(testOutputFile);
+        FileUtils.moveToTemporaryTestFolder(testPriceFilename);
+        FileUtils.moveToTemporaryTestFolder(testSalesFilename);
     }
 
 

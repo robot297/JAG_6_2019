@@ -36,7 +36,7 @@ public class Question_3_Read_Recycling_ReportTest {
             Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
             ArrayList<String> dataReadFromFile = q3.readLinesFromRecyclingDataFile(filename);
             
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
             
             assertTrue("Read in each line from the file, and add each line to an ArrayList. Don't modify the lines",
                     ArrayListUtils.stringArrayListEqual(examples, dataReadFromFile));
@@ -45,7 +45,7 @@ public class Question_3_Read_Recycling_ReportTest {
         }
         
         catch (IOException e) {
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
         }
                 
         

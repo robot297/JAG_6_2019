@@ -1,17 +1,12 @@
 package week_5;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import org.junit.Test;
 import test_utils.FileUtils;
 import test_utils.PrintUtils;
 
 import java.io.*;
 import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.UUID;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static org.junit.Assert.*;
@@ -24,7 +19,8 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
 
         Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
 
-        String filename = "name_color_class_code_write_test_file_" + UUID.randomUUID().toString() + ".txt";
+        String filename = FileUtils.uniqueFilename("name_color_class_code_write");
+        
         q1.writeToFile(filename, "alice", "blue", 2545);
 
         try {
@@ -37,7 +33,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
             }
 
             // Remove temporary file
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
     
     
             ArrayList<String> expected = newArrayList("alice", "blue", "2545");
@@ -59,7 +55,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
 
         } catch (IOException ioe) {
     
-            FileUtils.deleteFile(filename);
+            FileUtils.moveToTemporaryTestFolder(filename);
     
             fail("IOException with message " + ioe.getMessage() +
                     "\nCheck your writeToFile method, make sure it's creating a file, and closing the file once the data has been written. " +
@@ -77,7 +73,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
 
         Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
 
-        String filename = "name_color_class_code_read_test_file_" + UUID.randomUUID().toString() + ".txt";
+        String filename = FileUtils.uniqueFilename("name_color_class_code_read");
       
         // Write example data to a test file
         FileWriter writer = new FileWriter(filename);
@@ -86,7 +82,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     
         q1.printDataFromFile(filename);
     
-        FileUtils.deleteFile(filename);   // Delete test file
+        FileUtils.moveToTemporaryTestFolder(filename);
         
         String out = PrintUtils.resetStandardOut();
 
@@ -100,6 +96,8 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     @Test
     public void testUsesTryCatchBlocks() throws Exception {
 
+        // More accurately, check that the method doesn't declare that it throws an exception.
+        
         Class Q1 = Class.forName("week_5.Question_1_Write_Name_Color_Class_Code");
         Method mWrite = Q1.getMethod("writeToFile", String.class, String.class, String.class, int.class);
         assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
