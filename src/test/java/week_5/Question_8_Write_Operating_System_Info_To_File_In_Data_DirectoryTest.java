@@ -21,7 +21,7 @@ public class Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTes
     
         try {
             
-            BufferedReader reader = new BufferedReader(new FileReader(new File("data" + System.getProperty("file.separator") + "os.txt")));
+            BufferedReader reader = new BufferedReader(new FileReader(new File("data", "os.txt")));
             String line = reader.readLine();
             reader.close();
             
@@ -29,8 +29,9 @@ public class Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTes
                     line.contains(System.getProperty("os.name")));
         
         } catch (FileNotFoundException f) {
-            fail("os.txt File not found. Make sure your code creates a file called " +
-                    "os.txt in the data directory of this project");
+            fail("os.txt file not found. Make sure your code creates a file called " +
+                    "\nos.txt in the data directory of this project. " +
+                    "\nCreate a data directory if it does not exist. ");
         }
         
     }

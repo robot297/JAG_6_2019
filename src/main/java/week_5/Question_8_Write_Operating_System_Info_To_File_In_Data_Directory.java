@@ -3,8 +3,16 @@ package week_5;
 /**
  *
  
- The short version: Write the name of the operating system that's running this code, to a file
- called os.txt in the /data/ directory of this project.
+ The short version:
+ 
+ Write the name of the operating system that's running this code, to a file
+ called os.txt, in the /data/ directory of this project.
+ 
+ The file called placeholder.file in the data directory may be ignored, and should not affect this assignment.
+ The text in the file should explain why it's there.
+ 
+ 
+ 
  
  The long version:
  
@@ -37,7 +45,7 @@ package week_5;
  Linux, Max, and Unix-based computers use / to separate path components, e.g. /Bob/Documents/homework1.doc
  Windows uses backslashes \ to separate path components, e.g. \Bob\Documents\homework1.doc
  
- If you code a forward slash, or backslash, your program will work fine on one systen, but crash on the other.
+ If you code a forward slash, or backslash, your program will work fine on one system, but crash on the other.
  
  Java is architecture-neutral and the same code is supposed to run in the same way on PC and Mac and Linux,
  and anything else a JVM can be installed on, like a TV, Android device, refrigerator, car, toaster...
@@ -62,7 +70,7 @@ package week_5;
  Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
  
  
- [(Note: It is possible, but not recommended, to use absolute pathnames, for example
+ [(Note: In general, it is possible, but not recommended, to use absolute path names, for example
  
  C:\program files\java\textfile.txt on Windows, or
  /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,

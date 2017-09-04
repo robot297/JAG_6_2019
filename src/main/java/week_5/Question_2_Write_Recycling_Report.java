@@ -1,8 +1,6 @@
 package week_5;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+
 
 /**
  *
