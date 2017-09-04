@@ -66,7 +66,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     For this program, each word is assumed to be separated by a single space character.
     If the String sentence is null, this method should return 0.
     
-    Counting words can be a much trickier problem, with various special cases to consider. */
+    Counting words in real-world situations can be a much trickier problem, with various special cases to consider. */
     
     //Start of wordCount. Don't change or move this comment, the Autograder needs it.
     
