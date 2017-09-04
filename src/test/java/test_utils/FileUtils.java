@@ -60,7 +60,8 @@ public class FileUtils {
             System.out.println("Tried to move a temporary file with name: " + filename +
                     " to the temporary directory: " + tempDirectoryName +
                     "\n but an error occurred: " + e.getMessage() +
-                    "\n You may delete the file " + filename);
+                    "\n If this file doesn't exist, it's probably not a problem." +
+                    "\n If this file does exist, you may delete the file " + filename);
         }
     }
     

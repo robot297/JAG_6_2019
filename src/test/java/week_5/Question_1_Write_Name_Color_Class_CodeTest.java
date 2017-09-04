@@ -49,7 +49,9 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
             }
     
             // expected list should be empty.
-            assertEquals("Make sure you have written all the data, one item per line", 0, expected.size());
+            assertEquals("Make sure you have written all the data, one item per line" +
+                    "\nMake sure you close the file when you are done writing" +
+                    "\nCheck what gets written for the class code. Is it 2525?", 0, expected.size());
 
 
 

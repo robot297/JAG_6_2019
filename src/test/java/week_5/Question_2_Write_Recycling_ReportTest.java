@@ -42,7 +42,9 @@ public class Question_2_Write_Recycling_ReportTest {
         if (file.length() == 0)  {
             // No data in file, or file doesn't exist
             FileUtils.moveToTemporaryTestFolder(filename);
-            fail("File not found, or no data in the file. Write the data to a file called " + writeReport.filename);
+            fail("Recycling data file not found, or no data in the file. " +
+                    "\nMake sure you close the file when you are done writing." +
+                    "\nWrite the data to a file called " + writeReport.filename );
         }
         
         
@@ -78,8 +80,10 @@ public class Question_2_Write_Recycling_ReportTest {
             }
             
             assertEquals("Make sure you write the correct data to the file. " +
-                    "One line per house, in the format 'House 3 recycled 2 crates'. " +
-                    "If there's one crate, it should say '1 crate'. Else, use 'crates' ",
+                            "\nOne line per house, in the format 'House 3 recycled 2 crates'. " +
+                            "\nIf there's one crate, it should say '1 crate'. Else, use 'crates'" +
+                            "\nMake sure you have the last line with the total crates" +
+                            "\nThe test is looking for the specific strings given in the assignment description.",
                     expectedCounter, expectedContents.length);
     
             FileUtils.moveToTemporaryTestFolder(filename);

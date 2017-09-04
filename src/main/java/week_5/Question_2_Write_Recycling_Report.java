@@ -7,7 +7,7 @@ package week_5;
  Start with your recycling truck program from last time.
  Add code so that it writes the data as a report to a file.
  The report file should look like this example.
- Note that it should uses "crate" for 1 crate, "crates" otherwise.
+ Note that it should use "crate" for 1 crate, "crates" otherwise.
  
 
  House 0 recycled 1 crate
@@ -29,7 +29,7 @@ public class Question_2_Write_Recycling_Report {
     
     public String filename = "recycling_report.txt";
     
-    // TODO add your methods from the original recycling truck program
+    // TODO you can add your methods from the recycling truck program you wrote last lab
     
     
     public static void main(String[] args) {

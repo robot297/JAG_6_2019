@@ -12,7 +12,9 @@ Add try-catch blocks for IOException to the writing code, and the reading code. 
 ### Question 2 Write Recycling Report
     
 Start with your recycling truck program from last week. Add code so that it writes the data as a report to a file. The report file will look something like this example,
-
+N
+ote that it should use "crate" for 1 crate, "crates" otherwise.
+ 
 ```
 House 0 recycled 1 crate
 House 1 recycled 2 crates
