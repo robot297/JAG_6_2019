@@ -117,23 +117,31 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
  
  The data is in the format
  
+ `
  name;cost to make;price charged
+ `
  
  As in this example,
  
+ `
  Cappuccino;1.56;3.50
+ `
  
  So the cappuccino drink costs the coffee shop $1.56 to make, and they charge the customer $3.50.
  
  The file coffee_sales_data.txt contains the sales data for one day. This file is in the format
  
+ `
  name;number sold
+ `
  
  As in this example,
  
+ `
  Cappuccino;100
+ `
  
- The coffee shop sold 100 cappuccino drinks.
+ Which means that the coffee shop sold 100 cappuccino drinks.
  
  
  Your program should read this data from coffee_price_data.txt, and coffee_sales_data.txt, and
@@ -148,19 +156,24 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
  
  So, for example, if the coffee shop sold 100 cappuccinos today, you'll write a line that says
  
+ `
  Cappuccino: Sold 100, Expenses $150.60, Revenue $350.00, Profit $190.40
+ `
  
  perhaps using this String formatting template...
  
+ `
  "%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f"
- 
+ `
  
  And a similar line for each of the drinks. The autograder is looking for this exact format.
  
  At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks,
  for example, like this,
  
+ `
  All Drinks: Total Sold 1000, Expenses $1000, Revenue $2500, Profit $1500
+ `
  
  You should use try-with-resources exception handling for both file reading, and file writing.
  
