@@ -211,14 +211,18 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
   FileWriter can take a filename as an argument. The filename can only be a file in your current directory.
   So this doesn't work:
   
+  `
   new FileWriter fw = new FileWriter(“/data/testing.txt”);   // Error
+  `
   
   But, FileWriter can also take a File object as an argument, and a File object can store a path to a file
   elsewhere on your system (or even on a remote system).
   
   Here’s how to create a File object;
   
+  `
   File f = new File(“/mydirectory/mysubdirectory/textfile.txt”);
+  `
   
   Assuming these directories exist, you can create and write that file in this location.  The location
   is relative to the root directory of your project.
