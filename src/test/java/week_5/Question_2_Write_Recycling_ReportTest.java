@@ -78,7 +78,9 @@ public class Question_2_Write_Recycling_ReportTest {
                     expectedCounter++;
                 }
             }
-            
+    
+    
+            FileUtils.moveToTemporaryTestFolder(filename);
             assertEquals("Make sure you write the correct data to the file. " +
                             "\nOne line per house, in the format 'House 3 recycled 2 crates'. " +
                             "\nIf there's one crate, it should say '1 crate'. Else, use 'crates'" +
@@ -86,8 +88,7 @@ public class Question_2_Write_Recycling_ReportTest {
                             "\nThe test is looking for the specific strings given in the assignment description.",
                     expectedCounter, expectedContents.length);
     
-            FileUtils.moveToTemporaryTestFolder(filename);
-    
+      
     
         } catch (IOException ioe) {
             // File not found?
