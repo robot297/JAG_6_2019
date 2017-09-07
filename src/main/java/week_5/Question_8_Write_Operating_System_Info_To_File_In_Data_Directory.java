@@ -70,12 +70,15 @@ package week_5;
  Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
  
  
- [(Note: In general, it is possible, but not recommended, to use absolute path names, for example
+ (Note: In general, it is possible, but not recommended, to use absolute path names, for example
  
  C:\program files\java\textfile.txt on Windows, or
  /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,
  
  but if you do that, your program will almost certainly not work on anyone else's computer! )
+ 
+ (Another note - the File class has a built-in way to join path components, which is usually the safest way,
+ but for this lab, use system properties.)
 
  */
 
