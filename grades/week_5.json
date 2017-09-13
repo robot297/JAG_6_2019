@@ -10,19 +10,19 @@
       "question" : 2,
       "java_file": "Question_2_Write_Recycling_Report",
       "test_file": "Question_2_Write_Recycling_ReportTest",
-      "points": 2
+      "points": 3
     },
     {
       "question" : 3,
       "java_file": "Question_3_Read_Recycling_Report",
       "test_file": "Question_3_Read_Recycling_ReportTest",
-      "points": 2
+      "points": 3
     },
     {
       "question" : 4,
       "java_file": "Question_4_Exception_Handling_Questions",
       "test_file": "Question_4_Exception_Handling_QuestionsTest",
-      "points": 4
+      "points": 3
     },
     {
       "question" : 5,
@@ -46,7 +46,7 @@
       "question" : 8,
       "java_file": "Question_8_Write_Operating_System_Info_To_File_In_Data_Directory",
       "test_file": "Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest",
-      "points": 2
+      "points": 1
     }
 
   ]
