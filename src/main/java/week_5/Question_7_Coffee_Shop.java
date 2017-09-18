@@ -72,6 +72,9 @@ package week_5;
 
 public class Question_7_Coffee_Shop {
     
+    static String reportLineTemplate = "%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f";
+    
+    
     public static void main(String[] args) {
         Question_7_Coffee_Shop q7 = new Question_7_Coffee_Shop();
         q7.salesReport();
@@ -109,8 +112,9 @@ public class Question_7_Coffee_Shop {
     public void writeReportFile(Object drinkData, String filename) {
         // TODO finish this method.
         
-        // You may find this format String helpful
-        String reportLineTemplate = "%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f";
+        // You may find the reportLineTemplate String (a global variable) useful,
+        // the tests expect the output to follow that format.
+        
     }
     
     

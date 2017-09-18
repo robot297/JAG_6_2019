@@ -61,7 +61,8 @@ public class Question_7_Coffee_ShopTest {
         
         // Contents of expected sales report, based on the data above
         
-        String expectedSalesReport = "Coke: Sold 4, Expenses $0.40, Revenue $8.00, Profit $7.60\n" +
+        String expectedSalesReport =
+                "Coke: Sold 4, Expenses $0.40, Revenue $8.00, Profit $7.60\n" +
                 "Sprite: Sold 7, Expenses $1.40, Revenue $17.50, Profit $16.10\n" +
                 "All Drinks: Sold 13, Expenses $1.80, Revenue $25.50, Profit $23.70";
         
