@@ -188,7 +188,7 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
  
  Test and comment your code.
 
-### Question 8 Write your Operating System's name to a file in Another Directory
+### Question 8 Write your Operating System's Name to a File in Another Directory
 
  **The short version**: 
   
@@ -197,8 +197,6 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
   
   The file called placeholder.file in the data directory may be ignored, and should not affect this assignment.
   The text in the file should explain why it's there.
-  
-  
   
   
   **The long version**:
@@ -261,7 +259,7 @@ Modify the printLanguageList and wordCount methods so that both methods work cor
   Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
   
   
-  [(Note: In general, it is possible, but not recommended, to use absolute path names, for example
+  ( Note: In general, it is possible, but not recommended, to use absolute path names, for example
   
   C:\program files\java\textfile.txt on Windows, or
   /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,
