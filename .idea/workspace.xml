@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grades/Lab 5 Questions.md" afterPath="$PROJECT_DIR$/grades/Lab 5 Questions.md" />
     </list>
     <ignored path="Java_Auto_Grader_5_6_7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +46,8 @@
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-401">
-                  <caret line="200" column="2" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
+                <state relative-caret-position="259">
+                  <caret line="241" column="69" selection-start-line="241" selection-start-column="69" selection-end-line="241" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
@@ -1275,7 +1274,7 @@
       <workItem from="1505754248015" duration="3167000" />
       <workItem from="1506373571970" duration="385000" />
       <workItem from="1506511975548" duration="1789000" />
-      <workItem from="1506522061882" duration="1583000" />
+      <workItem from="1506522061882" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -1473,7 +1472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506512473974</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Minor typos in the instructions">
+      <created>1506531144449</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1506531144449</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1509,7 +1515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69275000" />
+    <option name="totallyTimeSpent" value="69310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1624,7 +1630,8 @@
     <MESSAGE value="Name" />
     <MESSAGE value="Fix tests for windows" />
     <MESSAGE value="Examples for word count" />
-    <option name="LAST_COMMIT_MESSAGE" value="Examples for word count" />
+    <MESSAGE value="Minor typos in the instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor typos in the instructions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2003,8 +2010,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="200" column="2" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
+        <state relative-caret-position="259">
+          <caret line="241" column="69" selection-start-line="241" selection-start-column="69" selection-end-line="241" selection-end-column="69" />
           <folding />
         </state>
       </provider>
