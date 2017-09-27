@@ -29,7 +29,10 @@ public class Question_6_Fix_Code_No_Exception_HandlingTest {
             PrintUtils.catchStandardOut();   // Catch the program's output
             q6.printLanguageList();
             String out = PrintUtils.resetStandardOut();   // And save it, to check the program still prints the same data
-            assertTrue("printLanguageList should still print the same 3 languages in the same order.", out.contains("C#\nPython\nJavaScript\n"));
+            out = out.replace("\n", "");
+            out = out.replace("\r", "");
+            assertTrue("printLanguageList should still print the same 3 languages in the same order.",
+                    out.contains("C#PythonJavaScript"));
             
         } catch (NoSuchElementException e) {
             

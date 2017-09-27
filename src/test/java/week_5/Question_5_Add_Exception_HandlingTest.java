@@ -36,9 +36,12 @@ public class Question_5_Add_Exception_HandlingTest {
         
             String out = PrintUtils.resetStandardOut();   // And save it, to chck the program still prints the same data
     
-            assertTrue("printLanguageList should still print the same 3 languages in the same order.", out.contains("C#\nSwift\nPython\n"));
+            out = out.replace("\n", "");
+            out = out.replace("\r", "");
+            assertTrue("printLanguageList should still print the same 3 languages in the same order.",
+                    out.contains("C#SwiftPython"));
     
-    
+            
         } catch (NoSuchElementException e) {
         
             fail("Add try-catch statements to catch the exception thrown in printLanguageList");
