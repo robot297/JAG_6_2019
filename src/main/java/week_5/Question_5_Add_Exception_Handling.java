@@ -71,7 +71,8 @@ public class Question_5_Add_Exception_Handling {
     If the String sentence is null, this method should return 0.
     
     Counting words in real-world applications can be a much trickier
-    problem, with various special cases to consider. */
+    problem, with various special cases to consider.
+    For example, is "sugar-free" one word, or two? How many words in "D. B. Cooper" ? */
     
     //Start of wordCount. Don't change or move this comment.  The Autograder needs it.
     

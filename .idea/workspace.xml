@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
     </list>
     <ignored path="Java_Auto_Grader_5_6_7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
     <favorites_list name="Java_Auto_Grader_5_6_7" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.312249">
+    <splitter split-orientation="horizontal" split-proportion="0.7148594">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Question_7_Coffee_Shop.java" pinned="false" current-in-tab="false">
@@ -40,13 +39,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Lab 5 Questions.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Lab 5 Questions.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
               <provider editor-type-id="MultiMarkdownFxHtmlEditor">
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1320">
+                <state relative-caret-position="-2332">
                   <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
                   <folding />
                 </state>
@@ -61,7 +60,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
                   <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-                  <folding />
+                  <folding>
+                    <element signature="e#384#385#0" expanded="false" />
+                    <element signature="e#453#454#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -71,7 +73,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="960">
                   <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-                  <folding />
+                  <folding>
+                    <element signature="e#855#856#0" expanded="false" />
+                    <element signature="e#922#923#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -81,7 +86,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="420">
                   <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-                  <folding />
+                  <folding>
+                    <element signature="e#613#614#0" expanded="false" />
+                    <element signature="e#685#686#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -96,11 +104,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_5_Add_Exception_Handling.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Question_5_Add_Exception_Handling.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+                <state relative-caret-position="253">
+                  <caret line="74" column="86" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="86" />
                   <folding />
                 </state>
               </provider>
@@ -109,8 +117,8 @@
           <file leaf-file-name="Question_6_Fix_Code_No_Exception_Handling.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
-                  <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+                <state relative-caret-position="270">
+                  <caret line="70" column="86" selection-start-line="70" selection-start-column="86" selection-end-line="70" selection-end-column="86" />
                   <folding />
                 </state>
               </provider>
@@ -145,7 +153,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1650">
                   <caret line="118" column="22" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="22" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -155,7 +165,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="660">
                   <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#819#827#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -175,7 +188,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1935">
                   <caret line="138" column="14" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="14" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -185,7 +200,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1155">
                   <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -205,12 +222,14 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="555">
                   <caret line="41" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_5_Add_Exception_HandlingTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Question_5_Add_Exception_HandlingTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
@@ -220,7 +239,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_6_Fix_Code_No_Exception_HandlingTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Question_6_Fix_Code_No_Exception_HandlingTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
@@ -287,7 +306,6 @@
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java" />
         <option value="$PROJECT_DIR$/grades/Lab 5 Questions.md" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_3_Read_Recycling_ReportTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test_utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java" />
@@ -299,8 +317,9 @@
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
       </list>
     </option>
   </component>
@@ -1248,7 +1267,7 @@
       <workItem from="1505273471001" duration="168000" />
       <workItem from="1505754248015" duration="3167000" />
       <workItem from="1506373571970" duration="385000" />
-      <workItem from="1506511975548" duration="295000" />
+      <workItem from="1506511975548" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -1432,7 +1451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505764029944</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix tests for windows">
+      <created>1506512282093</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1506512282093</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1468,7 +1494,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66198000" />
+    <option name="totallyTimeSpent" value="66391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1581,7 +1607,8 @@
     <MESSAGE value="README" />
     <MESSAGE value="Grades" />
     <MESSAGE value="Name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Name" />
+    <MESSAGE value="Fix tests for windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests for windows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1613,7 +1640,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#855#856#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1621,7 +1651,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1747,20 +1780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
@@ -1786,7 +1805,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1794,7 +1816,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#855#856#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1802,7 +1827,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#685#686#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1818,7 +1846,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="41" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1842,7 +1872,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#819#827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1850,7 +1883,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1858,7 +1893,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="138" column="14" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1866,7 +1903,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="118" column="22" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1886,30 +1925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="35" column="12" selection-start-line="31" selection-start-column="11" selection-end-line="35" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1924,6 +1939,44 @@
           <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="35" column="12" selection-start-line="31" selection-start-column="11" selection-end-line="35" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="74" column="86" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="70" column="86" selection-start-line="70" selection-start-column="86" selection-end-line="70" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2332">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

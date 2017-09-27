@@ -66,7 +66,9 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     For this program, each word is assumed to be separated by a single space character.
     If the String sentence is null, this method should return 0.
     
-    Counting words in real-world situations can be a much trickier problem, with various special cases to consider. */
+    Counting words in real-world situations can be a much trickier problem,
+    with various special cases to consider.
+    For example, is "sugar-free" one word, or two? How many words in "D. B. Cooper" ? */
     
     //Start of wordCount. Don't change or move this comment, the Autograder needs it.
     
