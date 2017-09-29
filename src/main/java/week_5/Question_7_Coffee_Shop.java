@@ -92,7 +92,11 @@ public class Question_7_Coffee_Shop {
         // Suggested outline of program. You can use any data structure you like.
         // You may need to combine more than one type of data structure.
         
-        // You may (and probably should) add more methods if necessary.
+        // readCoffeeDataFiles and writeReportFile may get quite long and complex. So,
+        // it is likely you will need to add some more helper methods that readCoffeeDataFiles
+        // and writeReportFile will call.
+        
+        // Replace 'Object' with the data type of the data structure you use.
         
         Object allDrinkData = readCoffeeDataFiles(price_data_file, sales_data_file);  // TODO replace Object with the type of your data structure
         writeReportFile(allDrinkData, output_report_file);
@@ -100,20 +104,34 @@ public class Question_7_Coffee_Shop {
     }
     
     
+    // Don't change the name, arguments, or purpose of this method. You should change the return type.
+    // The test expects it to be in your code, and have the behavior defined in the requirements.
     public Object readCoffeeDataFiles(String dataFile, String salesFile) {
         
         // TODO read in the data from the files, organize it into a data structure, and return it.
         // TODO change the return type of this method to the type of your data structure.
         
-        return null;
+        // You can call other methods from this method to help write the file.
     
+        return null;
+
+        
+        
     }
     
+    // Don't change the name, return type, or purpose of this method.
+    // You should change the first argument to the data structure you decide to use
+    // The test expects it to be in your code, and have the behavior defined in the requirements.
     public void writeReportFile(Object drinkData, String filename) {
+        
         // TODO finish this method.
+        // TODO change the first argument to the data type of your data structure.
         
         // You may find the reportLineTemplate String (a global variable) useful,
         // the tests expect the output to follow that format.
+        
+        // You can call other methods from this method to help write the file.
+        
         
     }
     
