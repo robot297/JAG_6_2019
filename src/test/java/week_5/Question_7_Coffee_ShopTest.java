@@ -90,7 +90,7 @@ public class Question_7_Coffee_ShopTest {
             
             reader.close();
             
-            assertEquals("Make sure you write the data in the exact format requested, and verify your math is correct.", expectedSalesReport, data);
+            assertEquals("Make sure you write the data in the exact format requested. \nWrite the data in the SAME order as the data files. \nVerify your math is correct. ", expectedSalesReport, data);
             
         } catch (FileNotFoundException f) {
             
