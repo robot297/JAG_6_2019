@@ -68,7 +68,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     
     Counting words in real-world situations can be a much trickier problem,
     with various special cases to consider.
-    For example, is "sugar-free" one word, or two? How many words in "D. B. Cooper" ? */
+    For example, is "sugar-free" one word, or two? How many words in "D.B. Cooper" ? */
     
     //Start of wordCount. Don't change or move this comment, the Autograder needs it.
     

@@ -64,7 +64,7 @@ public class Question_7_Coffee_ShopTest {
         String expectedSalesReport =
                 "Coke: Sold 4, Expenses $0.40, Revenue $8.00, Profit $7.60\n" +
                 "Sprite: Sold 7, Expenses $1.40, Revenue $17.50, Profit $16.10\n" +
-                "All Drinks: Sold 11, Expenses $1.80, Revenue $25.50, Profit $23.70";
+                "All Drinks: Sold 11 , Expenses $1.80, Revenue $25.50, Profit $23.70";
         
         
         q7.salesReport();
