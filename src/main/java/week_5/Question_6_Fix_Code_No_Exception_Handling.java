@@ -45,7 +45,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
         // to check for possible errors before they happen.
         // Make sure you still print all of the languages from the list.
         
-        LinkedList<String> languages = new LinkedList<String>();
+        LinkedList<String> languages = new LinkedList<>();
         
         languages.push("JavaScript");
         languages.push("Python");

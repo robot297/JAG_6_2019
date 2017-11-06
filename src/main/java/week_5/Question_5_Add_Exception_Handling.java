@@ -49,7 +49,7 @@ public class Question_5_Add_Exception_Handling {
         // Add a try-catch block to catch the NoSuchElementException that's thrown.
         // Your code should still print all the languages, but not crash.
         
-        LinkedList<String> languages = new LinkedList<String>();
+        LinkedList<String> languages = new LinkedList<>();
         
         languages.push("Python");
         languages.push("Swift");
