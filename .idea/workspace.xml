@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java" />
     </list>
     <ignored path="Java_Auto_Grader_5_6_7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +41,7 @@
           <file leaf-file-name="Question_7_Coffee_ShopTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
+                <state relative-caret-position="765">
                   <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding />
                 </state>
@@ -65,17 +64,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_4_Exception_Handling_Questions.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Question_4_Exception_Handling_Questions.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-168">
-                  <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+                <state relative-caret-position="330">
+                  <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_5_Add_Exception_Handling.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Question_5_Add_Exception_Handling.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
@@ -209,11 +208,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Question_6_Fix_Code_No_Exception_HandlingTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Question_6_Fix_Code_No_Exception_HandlingTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
                   <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Question_2_Write_Recycling_Report.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="381">
+                  <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -263,7 +272,6 @@
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_1_Write_Name_Color_Class_Code.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_1_Write_Name_Color_Class_CodeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_3_Read_Recycling_ReportTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test_utils/FileUtils.java" />
@@ -280,6 +288,7 @@
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java" />
       </list>
     </option>
   </component>
@@ -426,8 +435,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -568,7 +578,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1216,7 +1225,8 @@
       <workItem from="1507552006920" duration="57000" />
       <workItem from="1507553002466" duration="155000" />
       <workItem from="1509991012908" duration="391000" />
-      <workItem from="1509993648387" duration="86000" />
+      <workItem from="1509993648387" duration="100000" />
+      <workItem from="1509998778301" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -1463,7 +1473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509993682204</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Word count notes">
+      <created>1509993742834</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1509993742834</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1499,7 +1516,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73355000" />
+    <option name="totallyTimeSpent" value="73413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1520,12 +1537,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2942743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2942743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31083202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35729614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11480687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1757,13 +1774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1870,14 +1880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
@@ -1902,16 +1904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="765">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1924,10 +1918,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_4_Exception_Handling_Questions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
           <folding />
         </state>
       </provider>

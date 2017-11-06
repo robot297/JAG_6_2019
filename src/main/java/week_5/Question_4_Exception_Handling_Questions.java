@@ -41,8 +41,8 @@ package week_5;
  4. For unchecked exceptions, why is it usually better to anticipate and avoid errors when possible,
  instead of using try-catch blocks? At least 2 reasons.
  
- Questions on this subject are common in Java job interviews!
- 
+ Questions on this subject are common in Java job interviews so your answers should
+ be in the form of an interview question answer.
 
  */
 public class Question_4_Exception_Handling_Questions {
