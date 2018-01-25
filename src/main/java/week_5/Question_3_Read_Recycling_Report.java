@@ -71,13 +71,14 @@ public class Question_3_Read_Recycling_Report {
     
     public ArrayList<Integer> copyIndexesToNewArrayList(ArrayList<Integer> quantities, int value) {
     
-        //TODO copy the indexes of the houses with this maximum number into a new ArrayList and return this.
+        //TODO finish this method so it writes the indexes of the houses with the max value into a new ArrayList,
+        //and return the ArrayList.
         
         // This should be a generic method to copy all of the indexes of an ArrayList
         // where the element holds a certain value; into a new ArrayList.
-        // Exmple: if the ArrayList contains [ 9, 3, 2, 5, 9, 0 ]
+        // Example: if the ArrayList contains [ 9, 3, 2, 5, 9, 0 ]
         // The maximum values, 9, is found at index 0 and 5
-        // So return a new ArrayList [ 0, 5 ]
+        // So create and return a new ArrayList that contains [ 0, 5 ]
         
         return null;
     

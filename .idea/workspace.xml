@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
     </list>
     <ignored path="Java_Auto_Grader_5_6_7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,20 +26,7 @@
     <favorites_list name="Java_Auto_Grader_5_6_7" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Question_2_Write_Recycling_ReportTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,7 +71,6 @@
         <option value="$PROJECT_DIR$/data/os.txt" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop_Bak.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" />
         <option value="$PROJECT_DIR$/data/placeholder.file" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_1_Write_Name_Color_Class_Code.java" />
         <option value="$PROJECT_DIR$/src/test/java/test_utils/FileUtils.java" />
@@ -95,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
         <option value="$PROJECT_DIR$/grades/Lab 5 Questions.md" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_Directory.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java" />
@@ -104,6 +91,8 @@
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" />
+        <option value="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
       </list>
     </option>
   </component>
@@ -117,7 +106,7 @@
     <option name="x" value="84" />
     <option name="y" value="45" />
     <option name="width" value="1356" />
-    <option name="height" value="818" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -957,7 +946,7 @@
       <workItem from="1509991012908" duration="391000" />
       <workItem from="1509993648387" duration="100000" />
       <workItem from="1509998778301" duration="64000" />
-      <workItem from="1516832385129" duration="4573000" />
+      <workItem from="1516832385129" duration="6197000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -1225,7 +1214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516894570106</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Q2 clean up test">
+      <created>1516895957951</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1516895957951</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1261,7 +1257,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78006000" />
+    <option name="totallyTimeSpent" value="79630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,8 +1269,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="45" width="1356" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="84" y="45" width="1356" height="713" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.100137174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1285,10 +1280,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2942743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07192255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.084142394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25951293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25951293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1360,7 +1355,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="w5 Q3" />
     <MESSAGE value="w5 Q4 questions&#10;" />
     <MESSAGE value="Q5 underway" />
     <MESSAGE value="Q5" />
@@ -1385,7 +1379,8 @@
     <MESSAGE value="Word count notes" />
     <MESSAGE value="Q4 instructions" />
     <MESSAGE value="Q4 instructions, tidying, test timeouts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q4 instructions, tidying, test timeouts" />
+    <MESSAGE value="Q2 clean up test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Q2 clean up test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1602,14 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1622,14 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
           <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1674,14 +1653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1705,13 +1676,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
