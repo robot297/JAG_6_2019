@@ -11,11 +11,11 @@ import static org.junit.Assert.*;
 
 
 public class Question_2_Write_Recycling_ReportTest {
-
-
-    @Test(timeout=3000)
-    public void testWriteReport() throws Exception {
     
+    
+    @Test(timeout=3000)
+    public void testWriteReport() {
+        
         // Verify that the correct report is written
         
         // Example data
@@ -31,22 +31,6 @@ public class Question_2_Write_Recycling_ReportTest {
         String filename = FileUtils.uniqueFilename("recycling_report"); // Random filename to avoid clashing with student's file
         
         writeReport.writeReport(crates, total, filename);
-    
-        // How large is the file?
-        File file = new File(filename);
-        if (file.length() > 5000) {   // A somewhat arbitrary number... This file should not be more than 10KB, and for this test data, would be expected to be less than 1KB
-            FileUtils.moveToTemporaryTestFolder(filename);
-            fail("The output file is too large. Make sure you only write the recycling data, one line per house.");
-        }
-        
-        if (file.length() == 0)  {
-            // No data in file, or file doesn't exist
-            FileUtils.moveToTemporaryTestFolder(filename);
-            fail("Recycling data file not found, or no data in the file. " +
-                    "\nMake sure you close the file when you are done writing." +
-                    "\nWrite the data to a file called " + writeReport.filename );
-        }
-        
         
         // Read the file, verify correct contents
         
@@ -54,49 +38,47 @@ public class Question_2_Write_Recycling_ReportTest {
             
             // Read the file into one String.
             
-           StringBuffer lines = new StringBuffer();
-           // ArrayList<String> lines = new ArrayList<>();
+            StringBuilder lines = new StringBuilder();
             
             String line;
             while ((line = reader.readLine()) != null) {
                 lines.append(line);
-                //lines.add(line);
             }
             
-           String fileContents = lines.toString();
+            String fileContents = lines.toString();
+            
+            reader.close();
+            FileUtils.moveToTemporaryTestFolder(filename);
             
             // Expected file contents
             
-            String[] expectedContents = "House 0 recycled 1 crate\nHouse 1 recycled 4 crates\nHouse 2 recycled 2 crates\nHouse 3 recycled 1 crate\nTotal crates recycled: 8".split("\n");
+            String expectedContents = "House 0 recycled 1 crateHouse 1 recycled 4 cratesHouse 2 recycled 2 cratesHouse 3 recycled 1 crate";
+            String expectedSummary = "Total crates recycled: 8";
             
-            // Should find all of the strings in expectedContents, TODO in the right order.
+            String msg = "Make sure you write the correct data to the file. " +
+                    "\nOne line per house, in the format 'House 3 recycled 2 crates'. " +
+                    "\nIf there's one crate, it should say '1 crate'. Else, use 'crates'" +
+                    "\nThe test is looking for the specific strings given in the assignment description.";
             
-            int expectedCounter = 0;
+            assertTrue(msg, fileContents.contains(expectedContents));
             
-            for (String l : expectedContents) {
-                if (fileContents.contains(l)) {
-                    expectedCounter++;
-                }
-            }
-    
-    
-            FileUtils.moveToTemporaryTestFolder(filename);
-            assertEquals("Make sure you write the correct data to the file. " +
-                            "\nOne line per house, in the format 'House 3 recycled 2 crates'. " +
-                            "\nIf there's one crate, it should say '1 crate'. Else, use 'crates'" +
-                            "\nMake sure you have the last line with the total crates" +
-                            "\nThe test is looking for the specific strings given in the assignment description.",
-                    expectedCounter, expectedContents.length);
-    
-      
-    
-        } catch (IOException ioe) {
+            assertTrue("Make sure you have the last line with the total crates, for example\n" +
+                    expectedSummary, fileContents.contains(expectedSummary));
+            
+            
+        }
+        
+        catch (IOException e) {
+            e.printStackTrace();
+            fail("Exception thrown. Write data to a file called " + writeReport.filename);
+        }
+        
+        finally  {
             // File not found?
             FileUtils.moveToTemporaryTestFolder(filename);
-            fail("Write data to a file called " + writeReport.filename);
         }
-    
-    
+        
+        
         
     }
     
