@@ -41,6 +41,8 @@ package week_5;
  4. For unchecked exceptions, why is it usually better to anticipate and avoid errors when possible,
  instead of using try-catch blocks? At least 2 reasons.
  
+ 
+ 
  Questions on this subject are common in Java job interviews so your answers should
  be in the form of an interview question answer.
 
@@ -54,7 +56,8 @@ public class Question_4_Exception_Handling_Questions {
     String q2_cons_of_checked_exceptions = "";   //TODO Fill this in with your answer, at least 2 reasons
     String q3_your_opinion_on_java_having_checked_and_unchecked_exceptions = ""; // TODO fill this in with your opinion
     
-    // Why is it usually better to anticipate and try to prevent errors, vs. letting exceptions be thrown and then catch them?
+    
+    // Why is it often better to anticipate and try to prevent errors, vs. letting exceptions be thrown and then catch them?
     
     String[] q4_why_is_it_better_to_anticipate_and_prevent_errors = { "", "" };  // TODO fill this in. At least 2 reasons.
     

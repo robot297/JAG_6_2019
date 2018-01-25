@@ -44,6 +44,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
         // TODO stop this code crashing by modifying it
         // to check for possible errors before they happen.
         // Make sure you still print all of the languages from the list.
+        // Also make sure your code will still work for any number of languages in the LinkedList.
         
         LinkedList<String> languages = new LinkedList<>();
         
@@ -75,8 +76,9 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     public int wordCount(String sentence) {
         
         // TODO This code throws a NullPointerException if the String sentence is null.
-        // Modify this code to test if the String is null before splitting it.
+        // Add code to test if the String is null before splitting it.
         // Return 0 if the String is null.
+        
         String[] words = sentence.split(" ");
         return words.length;
     }

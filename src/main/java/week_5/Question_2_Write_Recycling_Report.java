@@ -29,7 +29,7 @@ public class Question_2_Write_Recycling_Report {
     
     public String filename = "recycling_report.txt";
     
-    // TODO you can add your methods from the recycling truck program you wrote last lab
+    // TODO you can use your methods from the recycling truck program you wrote last lab
     
     
     public static void main(String[] args) {

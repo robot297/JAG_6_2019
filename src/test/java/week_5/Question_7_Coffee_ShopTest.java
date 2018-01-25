@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
 public class Question_7_Coffee_ShopTest {
     
     
-    String testPriceFilename;
-    String testSalesFilename;
-    String testOutputFile;
+    private String testPriceFilename;
+    private String testSalesFilename;
+    private String testOutputFile;
     
     
     @Before
@@ -29,7 +29,7 @@ public class Question_7_Coffee_ShopTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void salesReport() throws Exception {
         
         Question_7_Coffee_Shop q7 = new Question_7_Coffee_Shop();
@@ -38,10 +38,12 @@ public class Question_7_Coffee_ShopTest {
         
         //Create some example input files
         
-        String priceData = "Coke;0.1;2\n" +
+        String priceData =
+                "Coke;0.1;2\n" +
                 "Sprite;0.2;2.50";
         
-        String salesData = "Coke;4\n" +
+        String salesData =
+                "Coke;4\n" +
                 "Sprite;7";
         
         FileWriter writer = new FileWriter(testPriceFilename);
@@ -90,7 +92,9 @@ public class Question_7_Coffee_ShopTest {
             
             reader.close();
             
-            assertEquals("Make sure you write the data in the exact format requested. \nWrite the data in the SAME order as the data files. \nVerify your math is correct. ", expectedSalesReport, data);
+            assertEquals("Make sure you write the data in the exact format requested. " +
+                    "\nWrite the data in the SAME order as the data files. " +
+                    "\nVerify your math is correct. ", expectedSalesReport, data);
             
         } catch (FileNotFoundException f) {
             
@@ -100,7 +104,7 @@ public class Question_7_Coffee_ShopTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void checkMethodDoesNotThrowException() throws Exception {
         //Verify readCoffeeDataFiles and writeReportFile do not throw exceptions
         

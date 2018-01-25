@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  */
 public class Question_3_Read_Recycling_ReportTest {
     
-    @Test
+    @Test(timeout=3000)
     public void readRecyclingFile() throws Exception {
     
         String filename = FileUtils.uniqueFilename("q3");
@@ -52,7 +52,7 @@ public class Question_3_Read_Recycling_ReportTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void extractCrateData() throws Exception {
     
         ArrayList<String> examples = ArrayListUtils.newStringArrayList("House 0 recycled 2 crates", "House 1 recycled 4 crates", "House 2 recycled 0 crates");
@@ -69,7 +69,7 @@ public class Question_3_Read_Recycling_ReportTest {
     
     }
     
-    @Test
+    @Test(timeout=3000)
     public void calculateMax() throws Exception {
     
         Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
@@ -87,7 +87,7 @@ public class Question_3_Read_Recycling_ReportTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void calculateMaxHouses() throws Exception {
     
         Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
@@ -131,7 +131,7 @@ public class Question_3_Read_Recycling_ReportTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testUsesTryCatchBlocks() throws Exception {
         
         Class q3 = Class.forName("week_5.Question_3_Read_Recycling_Report");

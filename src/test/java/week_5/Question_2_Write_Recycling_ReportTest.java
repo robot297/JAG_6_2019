@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class Question_2_Write_Recycling_ReportTest {
 
 
-    @Test
+    @Test(timeout=3000)
     public void testWriteReport() throws Exception {
     
         // Verify that the correct report is written
@@ -102,7 +102,7 @@ public class Question_2_Write_Recycling_ReportTest {
     
     
     
-    @Test
+    @Test(timeout=3000)
     public void testUsesTryCatchBlocks() throws Exception {
         
         // Verify that the writeReport method does not throw any exceptions,

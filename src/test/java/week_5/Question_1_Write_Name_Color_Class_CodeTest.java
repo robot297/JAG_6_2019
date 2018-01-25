@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 public class Question_1_Write_Name_Color_Class_CodeTest {
 
 
-    @Test
+    @Test(timeout=3000)
     public void testWriteToFile() throws Exception {
 
         Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
@@ -68,7 +68,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     }
 
     
-    @Test
+    @Test(timeout=3000)
     public void testPrintDataFromFile() throws Exception {
 
         PrintUtils.catchStandardOut();
@@ -95,7 +95,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     }
 
     
-    @Test
+    @Test(timeout=3000)
     public void testUsesTryCatchBlocks() throws Exception {
 
         // More accurately, check that the method doesn't declare that it throws an exception.

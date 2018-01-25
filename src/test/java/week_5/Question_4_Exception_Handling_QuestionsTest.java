@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class Question_4_Exception_Handling_QuestionsTest {
     
-    @Test
+    @Test(timeout = 3000)
     public void checkAnswerFilledIn() throws Exception {
         
         // All this does is test that the student wrote at least something.

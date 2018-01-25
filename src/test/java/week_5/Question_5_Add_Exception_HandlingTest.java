@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 
 public class Question_5_Add_Exception_HandlingTest {
     
-    @Test
+    @Test(timeout=3000)
     public void printLanguageList() throws Exception {
     
         // Ensure code does not crash
@@ -50,7 +50,7 @@ public class Question_5_Add_Exception_HandlingTest {
     
     }
     
-    @Test
+    @Test(timeout=3000)
     public void printLanguageListTryCatch() throws Exception {
         
         // Read source code and check that a try-catch statement has been added
@@ -95,7 +95,7 @@ public class Question_5_Add_Exception_HandlingTest {
     
     
     
-    @Test
+    @Test(timeout=3000)
     public void wordCount() throws Exception {
         // Ensure code does not crash
         // Read source code to check for presence of try-catch block for the specific exception thrown
@@ -115,7 +115,7 @@ public class Question_5_Add_Exception_HandlingTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void wordCountTryCatch() throws Exception {
         
         // Read source code and check that a try-catch statement has been added

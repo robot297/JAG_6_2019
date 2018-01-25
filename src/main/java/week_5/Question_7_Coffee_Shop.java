@@ -51,7 +51,7 @@ package week_5;
  
  And a similar line for each of the drinks. The autograder is looking for this exact format.
  
- Write the drink data in the *same order* as found in the data files.
+ Write the drink data in the **same order** as found in the data files.
  
  At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks,
  for example, like this,
@@ -67,7 +67,7 @@ package week_5;
  
  Optional: write unit tests for your helper methods. Ask if you need help.
  
- Test and comment your code.
+ You should also run and test your program. As always, remember to comment your code.
 
  */
 
@@ -128,7 +128,7 @@ public class Question_7_Coffee_Shop {
         // TODO finish this method.
         // TODO change the first argument to the data type of your data structure.
         
-        // You may find the reportLineTemplate String (a global variable) useful,
+        // You may find the reportLineTemplate String (a global variable) useful.
         // the tests expect the output to follow that format.
         
         // You can call other methods from this method to help write the file.
