@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="Better test fail message for Q2 writing to wrong file">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" afterPath="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" afterPath="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
     </list>
     <ignored path="Java_Auto_Grader_5_6_7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,7 @@
     <favorites_list name="Java_Auto_Grader_5_6_7" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +37,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>@Test</find>
+      <find>txt</find>
+      <find>.txt</find>
     </findStrings>
     <replaceStrings>
       <replace>@Test(timeout=3000)</replace>
@@ -90,9 +90,9 @@
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_5_Add_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_6_Fix_Code_No_Exception_Handling.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java" />
-        <option value="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java" />
         <option value="$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java" />
       </list>
     </option>
   </component>
@@ -221,9 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,6 +295,9 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -946,7 +946,9 @@
       <workItem from="1509991012908" duration="391000" />
       <workItem from="1509993648387" duration="100000" />
       <workItem from="1509998778301" duration="64000" />
-      <workItem from="1516832385129" duration="6197000" />
+      <workItem from="1516832385129" duration="6484000" />
+      <workItem from="1516900073007" duration="36000" />
+      <workItem from="1526050785167" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -1221,7 +1223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516895957951</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Removed extra space character in Q7 test">
+      <created>1516898948198</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1516898948198</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1257,7 +1266,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79630000" />
+    <option name="totallyTimeSpent" value="80145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1274,7 +1283,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.100137174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1288,7 +1297,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12620027" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1355,7 +1364,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="w5 Q4 questions&#10;" />
     <MESSAGE value="Q5 underway" />
     <MESSAGE value="Q5" />
     <MESSAGE value="Q6" />
@@ -1380,7 +1388,8 @@
     <MESSAGE value="Q4 instructions" />
     <MESSAGE value="Q4 instructions, tidying, test timeouts" />
     <MESSAGE value="Q2 clean up test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q2 clean up test" />
+    <MESSAGE value="Removed extra space character in Q7 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed extra space character in Q7 test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1397,7 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,7 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,7 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,16 +1498,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+        </state>
+      </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Java Autograder Lab 5.iml">
@@ -1515,7 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,7 +1540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,49 +1554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_1_Write_Name_Color_Class_CodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="e#833#841#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_3_Read_Recycling_ReportTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="133" column="23" lean-forward="false" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1117">
-          <caret line="117" column="23" lean-forward="false" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1601,7 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="106" column="95" lean-forward="true" selection-start-line="106" selection-start-column="95" selection-end-line="106" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1609,15 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
           <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-801">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,7 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,7 +1582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="46" column="94" lean-forward="false" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1641,19 +1589,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grades/Lab 5 Questions.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="174" column="1" lean-forward="false" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="285">
@@ -1669,12 +1614,6 @@
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="174" column="1" lean-forward="false" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_3_Read_Recycling_Report.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1684,28 +1623,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_1_Write_Name_Color_Class_CodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_7_Coffee_ShopTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="-503">
           <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_4_Exception_Handling_QuestionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_5_Add_Exception_HandlingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="117" column="23" lean-forward="false" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_6_Fix_Code_No_Exception_HandlingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_2_Write_Recycling_Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_2_Write_Recycling_ReportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="71" column="102" lean-forward="false" selection-start-line="71" selection-start-column="102" selection-end-line="71" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/week_5/Question_7_Coffee_Shop.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/week_5/Question_3_Read_Recycling_ReportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>

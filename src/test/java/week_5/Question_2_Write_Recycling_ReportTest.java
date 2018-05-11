@@ -69,7 +69,7 @@ public class Question_2_Write_Recycling_ReportTest {
         
         catch (IOException e) {
             e.printStackTrace();
-            fail("Exception thrown. Write data to a file called " + writeReport.filename);
+            fail("Exception thrown. Write data to a file with the name given by the filename variable.");
         }
         
         finally  {
