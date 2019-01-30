@@ -16,16 +16,39 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>edu.minneapolis</groupId>
+                <artifactId>ygi-maven-plugin</artifactId>
+                <version>0.0.2-alpha-4</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>ygi</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 
 
     <properties>
-        <powermock.version>1.6.6</powermock.version>
+        <powermock.version>2.0.0-beta.5</powermock.version>
     </properties>
 
     <dependencies>
@@ -45,12 +68,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Guava is a collection of helpful Java utilities, created by Google. -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>22.0</version>
-        </dependency>
 
         <!-- EasyMock is a mocking framework. PowerMock is an extension that works with EasyMock.
         Used for creating pretend objects that we can pre-configure their behavior and return values, useful in testing to avoid having to completely set up a program -->
@@ -72,7 +89,6 @@
             <version>${powermock.version}</version>
             <scope>test</scope>
         </dependency>
-
 
     </dependencies>
 

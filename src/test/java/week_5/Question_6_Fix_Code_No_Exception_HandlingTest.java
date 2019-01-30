@@ -1,6 +1,5 @@
 package week_5;
 
-import com.google.common.base.Joiner;
 import org.junit.Test;
 import test_utils.PrintUtils;
 
@@ -73,9 +72,7 @@ public class Question_6_Fix_Code_No_Exception_HandlingTest {
         
         // Read source code and check that try-catch statements have not been added
         // Not something that would be done in a commercial test :)
-        
-        Joiner joiner = Joiner.on(System.getProperty("file.separator"));
-        String path = joiner.join("src", "main", "java", "week_5", "Question_6_Fix_Code_No_Exception_Handling.java");
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_6_Fix_Code_No_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         

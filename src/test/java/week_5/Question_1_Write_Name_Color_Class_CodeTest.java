@@ -8,8 +8,8 @@ import java.io.*;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-import static com.google.common.collect.Lists.newArrayList;
 import static org.junit.Assert.*;
+import static test_utils.ArrayListUtils.newArrayList;
 
 public class Question_1_Write_Name_Color_Class_CodeTest {
 

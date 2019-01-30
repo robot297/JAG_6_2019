@@ -24,7 +24,7 @@ public class Question_3_Read_Recycling_ReportTest {
         try {
            
             // Write some example data to a temporary file
-            ArrayList<String> examples = ArrayListUtils.newStringArrayList("House 0 recycled 2 crates", "House 1 recycled 4 crates", "House 2 recycled 0 crates");
+            ArrayList<String> examples = ArrayListUtils.newArrayList("House 0 recycled 2 crates", "House 1 recycled 4 crates", "House 2 recycled 0 crates");
     
             FileWriter writer = new FileWriter(filename);
             for (String line : examples) {
@@ -55,9 +55,9 @@ public class Question_3_Read_Recycling_ReportTest {
     @Test(timeout=3000)
     public void extractCrateData() throws Exception {
     
-        ArrayList<String> examples = ArrayListUtils.newStringArrayList("House 0 recycled 2 crates", "House 1 recycled 4 crates", "House 2 recycled 0 crates");
+        ArrayList<String> examples = ArrayListUtils.newArrayList("House 0 recycled 2 crates", "House 1 recycled 4 crates", "House 2 recycled 0 crates");
     
-        ArrayList<Integer> expectedCrates = ArrayListUtils.newIntegerArrayList(2, 4, 0);
+        ArrayList<Integer> expectedCrates = ArrayListUtils.newArrayList(2, 4, 0);
         
         Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
         
@@ -74,13 +74,13 @@ public class Question_3_Read_Recycling_ReportTest {
     
         Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
     
-        ArrayList<Integer> exampleCrates = ArrayListUtils.newIntegerArrayList(2, 4, 0);
+        ArrayList<Integer> exampleCrates = ArrayListUtils.newArrayList(2, 4, 0);
         assertEquals("Verify calculateMax returns the highest number in the ArrayList", q3.calculateMax(exampleCrates), 4);
         
-        exampleCrates = ArrayListUtils.newIntegerArrayList(2, 4, 0, 6, 5, 2, 6, 0);
+        exampleCrates = ArrayListUtils.newArrayList(2, 4, 0, 6, 5, 2, 6, 0);
         assertEquals("Verify calculateMax returns the highest number in the ArrayList", q3.calculateMax(exampleCrates), 6);
         
-        exampleCrates = ArrayListUtils.newIntegerArrayList(-2, -4, -6);
+        exampleCrates = ArrayListUtils.newArrayList(-2, -4, -6);
         assertEquals("Verify calculateMax returns the highest number in the ArrayList. Make your code as general as possible - what if the ArrayList is all negative numbers?", q3.calculateMax(exampleCrates), -2);
     
     
@@ -92,10 +92,10 @@ public class Question_3_Read_Recycling_ReportTest {
     
         Question_3_Read_Recycling_Report q3 = new Question_3_Read_Recycling_Report();
         
-        ArrayList<Integer> exampleCrates = ArrayListUtils.newIntegerArrayList(2, 4, 0, 6, 5, 2, 6, 0);
+        ArrayList<Integer> exampleCrates = ArrayListUtils.newArrayList(2, 4, 0, 6, 5, 2, 6, 0);
     
         // Elements 3 and 6 have the maximum value of 6
-        ArrayList<Integer> exampleMaxHouses = ArrayListUtils.newIntegerArrayList(3, 6);
+        ArrayList<Integer> exampleMaxHouses = ArrayListUtils.newArrayList(3, 6);
         
         ArrayList<Integer> maxHouses = q3.copyIndexesToNewArrayList(exampleCrates, 6);
     
@@ -105,10 +105,10 @@ public class Question_3_Read_Recycling_ReportTest {
     
         // Another example
         
-        exampleCrates = ArrayListUtils.newIntegerArrayList(2, 4, 10, 6, 0);
+        exampleCrates = ArrayListUtils.newArrayList(2, 4, 10, 6, 0);
     
         // Element 2 has the maximum value of 10
-        exampleMaxHouses = ArrayListUtils.newIntegerArrayList(2);
+        exampleMaxHouses = ArrayListUtils.newArrayList(2);
     
         maxHouses = q3.copyIndexesToNewArrayList(exampleCrates, 10);
     
@@ -118,9 +118,9 @@ public class Question_3_Read_Recycling_ReportTest {
     
         // Another example: copyIndexesToNewArrayList is general and doesn't have to operate on the max value in the ArrayList.
     
-        exampleCrates = ArrayListUtils.newIntegerArrayList(2, 4, 10, 6, -2, 4, 0);
+        exampleCrates = ArrayListUtils.newArrayList(2, 4, 10, 6, -2, 4, 0);
         
-        exampleMaxHouses = ArrayListUtils.newIntegerArrayList(1, 5);
+        exampleMaxHouses = ArrayListUtils.newArrayList(1, 5);
     
         maxHouses = q3.copyIndexesToNewArrayList(exampleCrates, 4);
     
@@ -137,7 +137,6 @@ public class Question_3_Read_Recycling_ReportTest {
         Class q3 = Class.forName("week_5.Question_3_Read_Recycling_Report");
         Method mWrite = q3.getMethod("readLinesFromRecyclingDataFile", String.class);
         assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
-        
         
     }
     

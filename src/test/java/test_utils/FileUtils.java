@@ -1,9 +1,9 @@
 package test_utils;
 
-import com.google.common.io.Files;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.UUID;
 
 /**
@@ -13,8 +13,7 @@ import java.util.UUID;
 
 public class FileUtils {
     
-    // DO NOT do anything destructive.
-    // Just in case student modifies test and deletes some other file on their file system.
+    // Does not delete any files.
     // (Expected worst case is that a file will be moved unexpectedly).
     
     private static String tempDirectoryName = "temporary_directory_for_test_files_verify_no_important_files_are_here_then_you_may_delete";
@@ -55,14 +54,13 @@ public class FileUtils {
         
         try {
             ensureTempExists();
-            Files.move(file, tempDir);
+            Files.move(file.toPath(), tempDir.toPath());
         } catch (IOException e) {
             System.out.println("Tried to move a temporary file to the temporary directory: " + tempDirectoryName +
                     "\n but an error occurred: " + e.getMessage() +
                     "\n If this file exists, you may delete it.");
         }
     }
-    
     
 
     /** Create a unique filename for temporary test files.

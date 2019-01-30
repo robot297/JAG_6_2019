@@ -1,6 +1,7 @@
 package test_utils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Clara on 6/1/17.
@@ -9,27 +10,37 @@ import java.util.ArrayList;
 public class ArrayListUtils {
     
     
+    public static ArrayList<String> newArrayList(String... data) {
+        return new ArrayList<>(Arrays.asList(data));
+    }
+    
+    
+    public static ArrayList<Integer> newArrayList(Integer... data) {
+        return new ArrayList<>(Arrays.asList(data));
+    }
+    
+    
     /** Generate ArrayList from String arguments
      */
-    
-    public static ArrayList<String> newStringArrayList(String... items) {
-        ArrayList<String> strings = new ArrayList<>();
-        for (String st : items) {
-            strings.add(st);
-        }
-        
-        return strings;
-    }
-    
-    
-    public static ArrayList<Integer> newIntegerArrayList(Integer... items) {
-        ArrayList<Integer> ints = new ArrayList<>();
-        for (Integer i : items) {
-            ints.add(i);
-        }
-        
-        return ints;
-    }
+//
+//    public static ArrayList<String> newStringArrayList(String... items) {
+//        ArrayList<String> strings = new ArrayList<>();
+//        for (String st : items) {
+//            strings.add(st);
+//        }
+//
+//        return strings;
+//    }
+//
+//
+//    public static ArrayList<Integer> newIntegerArrayList(Integer... items) {
+//        ArrayList<Integer> ints = new ArrayList<>();
+//        for (Integer i : items) {
+//            ints.add(i);
+//        }
+//
+//        return ints;
+//    }
     
     
     /** Utility method to compare data in two ArrayLists.

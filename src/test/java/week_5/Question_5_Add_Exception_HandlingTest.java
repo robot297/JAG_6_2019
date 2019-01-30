@@ -1,6 +1,5 @@
 package week_5;
 
-import com.google.common.base.Joiner;
 import org.junit.Test;
 import test_utils.PrintUtils;
 
@@ -55,9 +54,8 @@ public class Question_5_Add_Exception_HandlingTest {
         
         // Read source code and check that a try-catch statement has been added
         // Not something that would be done in a commercial test :)
-    
-        Joiner joiner = Joiner.on(System.getProperty("file.separator"));
-        String path = joiner.join("src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
+        
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         String line = reader.readLine();
@@ -111,7 +109,6 @@ public class Question_5_Add_Exception_HandlingTest {
             fail("Add try-catch statements to catch the exception thrown in wordCount when sentence is null");
     
         }
-        
     }
     
     
@@ -121,8 +118,7 @@ public class Question_5_Add_Exception_HandlingTest {
         // Read source code and check that a try-catch statement has been added
         // Not something that would be done in a commercial test :)
         
-        Joiner joiner = Joiner.on(System.getProperty("file.separator"));
-        String path = joiner.join("src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         String line = reader.readLine();
