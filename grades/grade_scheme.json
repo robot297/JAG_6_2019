@@ -2,7 +2,7 @@
   "questions" : [
     {
       "question" : 1,
-      "source_file": "Question_1_Write_Name_Color_Class_Code",
+      "java_file": "Question_1_Write_Name_Color_Class_Code",
       "test_files": ["week_5.Question_1_Write_Name_Color_Class_CodeTest"],
       "points": 1
     },
