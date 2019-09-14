@@ -95,10 +95,10 @@ package week_5;
  */
 
 
-public class Question_8_Write_Operating_System_Info_To_File_In_Data_Directory {
+public class Question_7_Write_Operating_System_Info_To_File_In_Data_Directory {
     
     public static void main(String[] args) {
-        Question_8_Write_Operating_System_Info_To_File_In_Data_Directory q8 = new Question_8_Write_Operating_System_Info_To_File_In_Data_Directory();
+        Question_7_Write_Operating_System_Info_To_File_In_Data_Directory q8 = new Question_7_Write_Operating_System_Info_To_File_In_Data_Directory();
         q8.writeOSName();
     }
     

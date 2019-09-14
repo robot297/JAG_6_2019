@@ -9,12 +9,12 @@ import static org.junit.Assert.*;
 /**
  * Created by clara on 8/3/17.
  */
-public class Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest {
+public class Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest {
 
     @Test(timeout=3000)
     public void writeOSName()  {
         
-        Question_8_Write_Operating_System_Info_To_File_In_Data_Directory q8 = new Question_8_Write_Operating_System_Info_To_File_In_Data_Directory()  ;
+        Question_7_Write_Operating_System_Info_To_File_In_Data_Directory q8 = new Question_7_Write_Operating_System_Info_To_File_In_Data_Directory()  ;
         
         q8.writeOSName();
         

@@ -1,4 +1,4 @@
-# Lab 5
+# Lab 6
 
 ### Question 1 
 
@@ -29,7 +29,7 @@ Total crates recycled: 15
 
 ```
 
-Use try-catch blocks for IOException. The try-with-resources version is recommended.
+Use try-catch blocks for IOException. Use the try-with-resources style.
 
 
 ### Question 3 Read Recycling Report
@@ -85,6 +85,7 @@ instead of using try-catch blocks? At least 2 reasons.
 
 Questions on this subject are common in Java job interviews!
 
+
 ### Question 5 Fix Code with Exception Handling
 
 This program has two example methods. Both throw exceptions when you run the code.
@@ -109,88 +110,8 @@ Can you think of a better way to stop this code crashing?
 Modify the printLanguageList and wordCount methods so that both methods work correctly without using a try-catch statements.
 
 
-### Question 7 Coffee Shop
 
-Write a program that creates a sales report for a coffee shop.
-The coffee shop will use this at the end of every day to calculate sales, expenses, and profit.
-
-The coffee shop sells 12 different drinks. The name of each drink, the price the shop
-charges the customer, and how much it costs to make each drink, are saved in the file
-coffee_price_data.txt. It's in the root directory of this project.
-
-The data is in the format
-
-`
-name;cost to make;price charged
-`
-
-As in this example,
-
-`
-Cappuccino;1.56;3.50
-`
-
-So the cappuccino drink costs the coffee shop $1.56 to make, and they charge the customer $3.50.
-
-The file coffee_sales_data.txt contains the sales data for one day. This file is in the format
-
-`
-name;number sold
-`
-
-As in this example,
-
-`
-Cappuccino;100
-`
-
-Which means that the coffee shop sold 100 cappuccino drinks.
-
-
-Your program should read this data from coffee_price_data.txt, and coffee_sales_data.txt, and
-store it all in some kind of data structure.
-
-You should deal with any file-related exceptions properly.
-
-Once you have gathered all the data, generate a report that will be written out to a new file called
-`daily_sales_report.txt`. For each drink, record the number of drinks sold, the total that it cost to
-make the total quantity of those drinks (expenses), and the total amount (revenue) spent by
-customers on that drink.
-
-So, for example, if the coffee shop sold 100 cappuccinos today, you'll write a line that says
-
-`
-Cappuccino: Sold 100, Expenses $150.60, Revenue $350.00, Profit $190.40
-`
-
-perhaps using this String formatting template...
-
-`
-"%s: Sold %d, Expenses $%.2f, Revenue $%.2f, Profit $%.2f"
-`
-
-And a similar line for each of the drinks. The autograder is looking for this exact format.
-
-Write the drink data in the *same order* as found in the data files. 
-
-At the bottom of the file, write the total expenses, total revenue, and total profit for all drinks,
-for example, like this,
-
-`
-All Drinks: Total Sold 1000, Expenses $1000, Revenue $2500, Profit $1500
-`
-
-You should use try-with-resources exception handling for both file reading, and file writing.
-
-Use methods to organize your code. The autograder will call the salesReport() method, and will examine
-the output file your program creates.   The instructor will assess the quality of your code and solution.
-
-You should probably write some extra helper methods for the subtasks of this problem.
-
-Test and comment your code.
-
-
-### Question 8 Write your Operating System's Name to a File in Another Directory
+### Question 7 Write your Operating System's Name to a File in Another Directory
 
 **The short version**: 
 
@@ -206,7 +127,7 @@ The text in the file should explain why it's there.
 
 Make sure you catch and handle any exceptions.
 
-Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
+Test your program on a Windows and a Mac/Linux computer. There are Macs and PCs in the hallway outside T3050.
 
 **The long version**:
 
