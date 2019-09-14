@@ -1,4 +1,4 @@
-package week_5;
+package week_6;
 
 import org.junit.Test;
 import test_utils.FileUtils;
@@ -100,7 +100,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
 
         // More accurately, check that the method doesn't declare that it throws an exception.
         
-        Class Q1 = Class.forName("week_5.Question_1_Write_Name_Color_Class_Code");
+        Class Q1 = Class.forName("week_6.Question_1_Write_Name_Color_Class_Code");
         Method mWrite = Q1.getMethod("writeToFile", String.class, String.class, String.class, int.class);
         assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
 

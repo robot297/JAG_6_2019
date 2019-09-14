@@ -1,4 +1,4 @@
-package week_5;
+package week_6;
 
 import org.junit.Test;
 import test_utils.PrintUtils;

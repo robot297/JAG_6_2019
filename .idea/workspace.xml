@@ -222,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.week_5 in Java Autograder Lab 6">
+  <component name="RunManager" selected="JUnit.week_6 in Java Autograder Lab 6">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -391,15 +391,15 @@
       <method v="2" />
     </configuration>
     <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_Auto_Grader_5_6_7" />
+      <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_5.*" />
+          <option name="PATTERN" value="week_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week_5" />
-      <option name="MAIN_CLASS_NAME" value="week_5.Question_1_Write_Name_Color_Class_CodeTest" />
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_1_Write_Name_Color_Class_CodeTest" />
       <option name="METHOD_NAME" value="testWriteToFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -411,12 +411,12 @@
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_5.*" />
+          <option name="PATTERN" value="week_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week_5" />
-      <option name="MAIN_CLASS_NAME" value="week_5.Question_6_Fix_Code_No_Exception_HandlingTest" />
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_6_Fix_Code_No_Exception_HandlingTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -427,12 +427,12 @@
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_5.*" />
+          <option name="PATTERN" value="week_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week_5" />
-      <option name="MAIN_CLASS_NAME" value="week_5.Question_6_Fix_Code_No_Exception_HandlingTest" />
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_6_Fix_Code_No_Exception_HandlingTest" />
       <option name="METHOD_NAME" value="printLanguageList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -444,12 +444,12 @@
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_5.*" />
+          <option name="PATTERN" value="week_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week_5" />
-      <option name="MAIN_CLASS_NAME" value="week_5.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
       <option name="METHOD_NAME" value="writeOSName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -464,15 +464,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="week_5 in Java Autograder Lab 6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="week_6 in Java Autograder Lab 6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_5.*" />
+          <option name="PATTERN" value="week_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week_5" />
+      <option name="PACKAGE_NAME" value="week_6" />
       <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -558,11 +558,11 @@
       <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
       <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest" />
       <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" />
-      <item itemvalue="JUnit.week_5 in Java Autograder Lab 6" />
+      <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.week_5 in Java Autograder Lab 6" />
+        <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
         <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" />
         <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest" />
         <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.writeOSName" />

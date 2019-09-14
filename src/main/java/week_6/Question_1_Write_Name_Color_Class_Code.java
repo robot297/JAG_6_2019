@@ -1,7 +1,5 @@
-package week_5;
+package week_6;
 
-
-import java.io.*;
 
 /**
  *

@@ -1,4 +1,4 @@
-package week_5;
+package week_6;
 
 import org.junit.Test;
 import test_utils.ArrayListUtils;
@@ -134,7 +134,7 @@ public class Question_3_Read_Recycling_ReportTest {
     @Test(timeout=3000)
     public void testUsesTryCatchBlocks() throws Exception {
         
-        Class q3 = Class.forName("week_5.Question_3_Read_Recycling_Report");
+        Class q3 = Class.forName("week_6.Question_3_Read_Recycling_Report");
         Method mWrite = q3.getMethod("readLinesFromRecyclingDataFile", String.class);
         assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
         

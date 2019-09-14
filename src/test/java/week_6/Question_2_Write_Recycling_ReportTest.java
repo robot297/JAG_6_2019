@@ -1,4 +1,4 @@
-package week_5;
+package week_6;
 
 import org.junit.Test;
 import test_utils.FileUtils;
@@ -89,7 +89,7 @@ public class Question_2_Write_Recycling_ReportTest {
         // Verify that the writeReport method does not throw any exceptions,
         // implying that exceptions are handled within the method.
         
-        Class Q2 = Class.forName("week_5.Question_2_Write_Recycling_Report");
+        Class Q2 = Class.forName("week_6.Question_2_Write_Recycling_Report");
         Method mWrite = Q2.getMethod("writeReport", int[].class, int.class, String.class);
         assertEquals("Add try-catch blocks to your writeReport method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
         
