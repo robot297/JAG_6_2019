@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class Question_1_Write_Name_Color_Class_CodeTest {
 
-    File tempFileDirectory = new File("temporary_directory_for_test_files");
+    private File tempFileDirectory = new File("temporary_directory_for_test_files");
 
     @Test(timeout=3000)
     public void testWriteToFile() {
@@ -26,6 +26,7 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     
             byte[] bytes = Files.readAllBytes(tempFile.toPath());
             String fileData = new String(bytes);
+            
             fileData = fileData.trim().replace("\r", "").replace("\n", "");
             String expected = "aliceblue2545";
             

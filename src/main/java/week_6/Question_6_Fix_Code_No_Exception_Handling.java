@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
  Instead of waiting for an exception and catching it, it is usually better to try and prevent problems.
 
- Can you think of a better way to stop this code crashing?
+ Can you think of better ways to stop this code crashing?
  
  Modify the printLanguageList and wordCount methods program so that both methods work correctly without using a try-catch statements.
 
@@ -52,7 +52,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
         languages.push("Python");
         languages.push("C#");
         
-        while (true) {
+        while (true) {        // TODO can you use a better loop condition?
             String oneLanguage = languages.pop();
             System.out.println(oneLanguage);
         }
@@ -75,7 +75,7 @@ public class Question_6_Fix_Code_No_Exception_Handling {
     
     public int wordCount(String sentence) {
         
-        // TODO This code throws a NullPointerException if the String sentence is null.
+        // TODO this code throws a NullPointerException if the String sentence is null.
         // Add code to test if the String is null before splitting it.
         // Return 0 if the String is null.
         

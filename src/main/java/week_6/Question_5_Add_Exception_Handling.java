@@ -4,10 +4,10 @@ import java.util.LinkedList;
 
 /**
  *
- 
  This program has two example methods. Both throw exceptions when you run the code.
  
- Fix by adding a try-catch block in each method.  Don't modify any of the existing code. Here, you will be adding new code.
+ Fix by adding a try-catch block in each method.  Don't modify any of the existing code.
+ Here, you will be adding new code.
  
  For the printLanguageList method, add try-catch statements.
  In the catch block, print a message that the LinkedList is empty. You don't need to do anything else, just let the method return.
@@ -50,13 +50,13 @@ public class Question_5_Add_Exception_Handling {
         
         LinkedList<String> languages = new LinkedList<>();
         
-        languages.push("Python");
+        languages.push("Python");     // push() adds a new element to the end of the list.
         languages.push("Swift");
         languages.push("C#");
     
         while (true) {
-            String oneLanguage = languages.pop();
-            System.out.println(oneLanguage);
+            String oneLanguage = languages.pop();   // pop() removes an element from the end of the list.
+            System.out.println(oneLanguage);        // What order are the elements printed in?
         }
     }
     

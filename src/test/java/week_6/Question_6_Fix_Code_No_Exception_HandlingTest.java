@@ -44,9 +44,6 @@ public class Question_6_Fix_Code_No_Exception_HandlingTest {
     }
     
     
-    
-    
-    
     @Test(timeout=3000)
     public void wordCount() throws Exception {
         // Ensure code does not crash

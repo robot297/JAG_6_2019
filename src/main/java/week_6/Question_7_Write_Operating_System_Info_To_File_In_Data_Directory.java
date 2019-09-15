@@ -104,10 +104,13 @@ public class Question_7_Write_Operating_System_Info_To_File_In_Data_Directory {
     
     public void writeOSName() {
         
-        // TODO write the name of the operating system running this code to a file /data/os.txt
+        // TODO write the name of the operating system running this code to a file
+        //  in the data directory called os.txt
         // The file has to be written in the data directory of this project
         // Use system properties to get the operating system name.
         // Remember this exact same code needs to work on a Mac and Windows computer without any modifications.
+        
+        // Handle any exceptions in this method. Do not declare that this method throws any exceptions.
         
         // Test your code on both types of operating systems: Windows, and Mac/Linux.
     }
