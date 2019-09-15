@@ -26,7 +26,7 @@ package week_6;
  Questions:
  
  Considering many other languages don't require you to deal with exceptions,
- think about why Java does make you deal with at least some.
+ think about why Java does make you handle with at least some exceptions.
  
  1. List at least 1 benefit of checked exceptions
  2. List at least 2 negative consequences of checked exceptions
@@ -42,15 +42,17 @@ package week_6;
  instead of using try-catch blocks? At least 2 reasons.
  
  
- 
  Questions on this subject are common in Java job interviews so your answers should
  be in the form of an interview question answer.
 
  */
 public class Question_4_Exception_Handling_Questions {
     
+    // TODO answer in the form of an interview question. Write as much as you need in each String
     
-    // Questions on checked and unchecked exceptions
+    // TODO include your sources in comments.
+    
+    // This question will be graded manually. All the test does is check that you wrote something.
     
     String q1_pros_of_checked_exceptions = "";   //TODO Fill this in with your answer
     String q2_cons_of_checked_exceptions = "";   //TODO Fill this in with your answer, at least 2 reasons
