@@ -2,6 +2,7 @@ package test_utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by Clara on 6/1/17.
@@ -24,7 +25,7 @@ public class ArrayListUtils {
      * Returns true if both lists are the same length, and
      * have the same strings in the same order. */
 
-     public static boolean stringArrayListEqual(ArrayList<String> a1, ArrayList<String> a2) {
+     public static boolean stringListEqual(List<String> a1, List<String> a2) {
 
         if (a1 == null && a2 == null)  { return true; }    //both null
         if (a1 == null || a2 == null)  { return false; }   //if previous condition is false, this checks if one or the other null
@@ -40,7 +41,7 @@ public class ArrayListUtils {
     }
 
 
-    public static boolean intArrayListEqual(ArrayList<Integer> a1, ArrayList<Integer> a2) {
+    public static boolean intListEqual(List<Integer> a1, List<Integer> a2) {
 
         if (a1 == null && a2 == null)  { return true; }    //both null
         if (a1 == null || a2 == null)  { return false; }   //if previous condition is false, this checks if one or the other null
