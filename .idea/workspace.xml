@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_CR2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_easymock_2_0_0_beta_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_support_2_0_0_beta_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_core_2_0_0_beta_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_2_0_0_beta_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_2_0_0_beta_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_reflect_2_0_0_beta_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="rename packages">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Autograder Lab 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java Autograder Lab 6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 5 Questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 5 Questions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee_price_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee_sales_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grades/grade_scheme.json" beforeDir="false" afterPath="$PROJECT_DIR$/grades/grade_scheme.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_6/Question_1_Write_Name_Color_Class_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_6/Question_1_Write_Name_Color_Class_Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_utils/ArrayListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_utils/ArrayListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_2_Write_Recycling_ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_2_Write_Recycling_ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_3_Read_Recycling_ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_3_Read_Recycling_ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_6_Fix_Code_No_Exception_HandlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_6_Fix_Code_No_Exception_HandlingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,24 +34,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>@Test</find>
-      <find>txt</find>
-      <find>.txt</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>@Test(timeout=3000)</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="y" value="23" />
-    <option name="width" value="1328" />
-    <option name="height" value="825" />
   </component>
   <component name="ProjectId" id="1QqS5S1Qm1XkSJPhfQhJBGd1uSQ" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -164,6 +137,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -222,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.week_6 in Java Autograder Lab 6">
+  <component name="RunManager" selected="JUnit.Question_1_Write_Name_Color_Class_CodeTest">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -346,6 +320,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question_1_Write_Name_Color_Class_Code" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_1_Write_Name_Color_Class_Code" />
+      <module name="Java Autograder Lab 6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -390,6 +378,22 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="Question_1_Write_Name_Color_Class_CodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java Autograder Lab 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_1_Write_Name_Color_Class_CodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
@@ -407,22 +411,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Question_6_Fix_Code_No_Exception_HandlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java Autograder Lab 6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week_6" />
-      <option name="MAIN_CLASS_NAME" value="week_6.Question_6_Fix_Code_No_Exception_HandlingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
@@ -434,23 +422,6 @@
       <option name="PACKAGE_NAME" value="week_6" />
       <option name="MAIN_CLASS_NAME" value="week_6.Question_6_Fix_Code_No_Exception_HandlingTest" />
       <option name="METHOD_NAME" value="printLanguageList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.writeOSName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java Autograder Lab 6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week_6" />
-      <option name="MAIN_CLASS_NAME" value="week_6.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
-      <option name="METHOD_NAME" value="writeOSName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -554,19 +525,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.writeOSName" />
-      <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
-      <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest" />
       <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" />
       <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
+      <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest" />
+      <item itemvalue="Application.Question_1_Write_Name_Color_Class_Code" />
+      <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest" />
+        <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
+        <item itemvalue="Application.Question_1_Write_Name_Color_Class_Code" />
         <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
         <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" />
-        <item itemvalue="JUnit.Question_6_Fix_Code_No_Exception_HandlingTest" />
-        <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.writeOSName" />
-        <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -602,7 +573,7 @@
       <workItem from="1541350861087" duration="2103000" />
       <workItem from="1544566978303" duration="934000" />
       <workItem from="1548815331853" duration="800000" />
-      <workItem from="1568496458917" duration="452000" />
+      <workItem from="1568496458917" duration="3907000" />
     </task>
     <task id="LOCAL-00001" summary="Start of week 5">
       <created>1496361654279</created>
@@ -891,40 +862,22 @@
       <option name="project" value="LOCAL" />
       <updated>1526050980227</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="change lab number to 6, remove one question">
+      <created>1568497161322</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1568497161323</updated>
+    </task>
+    <task id="LOCAL-00043" summary="rename packages">
+      <created>1568497219297</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1568497219297</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 11m 11s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 12m 43s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 12m 50s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 14m 51s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 23m 29s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_1_Write_Name_Color_Class_CodeTest_testWriteToFile - 2017.09.04 at 14h 24m 12s.xml">
-      <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_6_Fix_Code_No_Exception_HandlingTest - 2017.09.27 at 06h 36m 17s.xml">
-      <configuration name="Question_6_Fix_Code_No_Exception_HandlingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_6_Fix_Code_No_Exception_HandlingTest_printLanguageList - 2017.09.27 at 06h 36m 24s.xml">
-      <configuration name="Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_6_Fix_Code_No_Exception_HandlingTest_printLanguageList - 2017.09.27 at 06h 36m 35s.xml">
-      <configuration name="Question_6_Fix_Code_No_Exception_HandlingTest.printLanguageList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest_writeOSName - 2017.09.04 at 14h 45m 05s.xml">
-      <configuration name="Question_8_Write_Operating_System_Info_To_File_In_Data_DirectoryTest.writeOSName" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,8 +916,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Q5" />
-    <MESSAGE value="Q6" />
     <MESSAGE value="Q8 and all done" />
     <MESSAGE value="Never, never, never use the commit message 'all done'" />
     <MESSAGE value="Add InputUtils" />
@@ -988,7 +939,20 @@
     <MESSAGE value="Q2 clean up test" />
     <MESSAGE value="Removed extra space character in Q7 test" />
     <MESSAGE value="Better test fail message for Q2 writing to wrong file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better test fail message for Q2 writing to wrong file" />
+    <MESSAGE value="change lab number to 6, remove one question" />
+    <MESSAGE value="rename packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

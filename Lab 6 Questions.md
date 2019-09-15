@@ -1,5 +1,8 @@
 # Lab 6
 
+Note for all file-related programs: the tests will make temporary files in the temporary_directory_for_test_files folder. You can ignore these, or delete them. 
+If your tests are failing then you can check these files to see what the tests are writing to a file, which may help debug your program.
+
 ### Question 1 
 
 Write a program that uses the buffered classes to write out your name, your favorite color, and this class's code (2545) to a new file.   

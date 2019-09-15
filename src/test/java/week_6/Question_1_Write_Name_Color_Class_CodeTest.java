@@ -1,96 +1,76 @@
 package week_6;
 
 import org.junit.Test;
-import test_utils.FileUtils;
-import test_utils.PrintUtils;
 
+import test_utils.PrintUtils;
 import java.io.*;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
+import java.nio.file.Files;
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
-import static test_utils.ArrayListUtils.newArrayList;
 
 public class Question_1_Write_Name_Color_Class_CodeTest {
 
+    File tempFileDirectory = new File("temporary_directory_for_test_files");
 
     @Test(timeout=3000)
-    public void testWriteToFile() throws Exception {
-
-        Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
-
-        String filename = FileUtils.uniqueFilename("name_color_class_code_write");
+    public void testWriteToFile() {
         
-        q1.writeToFile(filename, "alice", "blue", 2545);
-
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(filename));
-            String line;
-            ArrayList<String> data = new ArrayList<String>();
-
-            while (((line = reader.readLine()) != null)) {
-                data.add(line);
-            }
-
-            // Remove temporary file
-            FileUtils.moveToTemporaryTestFolder(filename);
+            Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
     
+            File tempFile = File.createTempFile("question1write", ".txt", tempFileDirectory);
+            String filename = tempFile.getAbsolutePath();
+            q1.writeToFile(filename, "alice", "blue", 2545);
     
-            ArrayList<String> expected = newArrayList("alice", "blue", "2545");
-
-            for (String d : data) {
-
-                for (String ex : expected) {
-                    if (d.contains(ex)) {
-                        expected.remove(ex);
-                        break;
-                    }
-                }
-            }
-    
-            // expected list should be empty.
-            assertEquals("Make sure you have written all the data, one item per line" +
+            byte[] bytes = Files.readAllBytes(tempFile.toPath());
+            String fileData = new String(bytes);
+            fileData = fileData.trim().replace("\r", "").replace("\n", "");
+            String expected = "aliceblue2545";
+            
+            assertEquals("Make sure you have written all the data, one item per line, " +
+                    "Don't write anything else to the file." +
                     "\nMake sure you close the file when you are done writing" +
-                    "\nCheck what gets written for the class code. Is it 2525?", 0, expected.size());
-
-
-
+                    "\nCheck what is written for the class code. Is it 2524?", expected, fileData);
+            
         } catch (IOException ioe) {
-    
-            FileUtils.moveToTemporaryTestFolder(filename);
-    
             fail("IOException with message " + ioe.getMessage() +
                     "\nCheck your writeToFile method, make sure it's creating a file, and closing the file once the data has been written. " +
                     "\nAnd, check for any errors it might throw");
-
         }
-        
     }
 
     
     @Test(timeout=3000)
-    public void testPrintDataFromFile() throws Exception {
+    public void testPrintDataFromFile()  {
 
-        PrintUtils.catchStandardOut();
-
-        Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
-
-        String filename = FileUtils.uniqueFilename("name_color_class_code_read");
-      
-        // Write example data to a test file
-        FileWriter writer = new FileWriter(filename);
-        writer.write("alice\nblue\n2545");
-        writer.close();
+        try {
+            PrintUtils.catchStandardOut();
     
-        q1.printDataFromFile(filename);
+            Question_1_Write_Name_Color_Class_Code q1 = new Question_1_Write_Name_Color_Class_Code();
     
-        FileUtils.moveToTemporaryTestFolder(filename);
+            File tempOutFile = File.createTempFile("question1read", ".txt", new File("temporary_directory_for_test_files"));
+    
+            FileWriter writer = new FileWriter(tempOutFile);
+            writer.write("alice\nblue\n2545");
+            writer.close();
+    
+            q1.printDataFromFile(tempOutFile.getPath());
+            
+            String out = PrintUtils.resetStandardOut();
+            
+            assertTrue("Print your name, from the file", out.contains("alice"));
+            assertTrue("Print your favorite color, from the file", out.contains("blue"));
+            assertTrue("Print this class code, from the file", out.contains("2545"));
         
-        String out = PrintUtils.resetStandardOut();
-
-        assertTrue("Print your name, from the file", out.contains("alice"));
-        assertTrue("Print your favorite color, from the file", out.contains("blue"));
-        assertTrue("Print this class code, from the file", out.contains("2545"));
+            
+        } catch (IOException ioe) {
+            fail("IOException with message " + ioe.getMessage() +
+                    "\nCheck your printDataFromFile method, make sure it's creating a file, " +
+                    "and closing the file once the data has been read. " +
+                    "\nAnd, check for any errors your method throws.");
+        }
         
     }
 
@@ -98,21 +78,19 @@ public class Question_1_Write_Name_Color_Class_CodeTest {
     @Test(timeout=3000)
     public void testUsesTryCatchBlocks() throws Exception {
 
-        // More accurately, check that the method doesn't declare that it throws an exception.
+        // More accurately, check that the methods doesn't declare that they throw an exception.
         
-        Class Q1 = Class.forName("week_6.Question_1_Write_Name_Color_Class_Code");
-        Method mWrite = Q1.getMethod("writeToFile", String.class, String.class, String.class, int.class);
-        assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mWrite.getExceptionTypes().length);
-
-        Method mRead = Q1.getMethod("printDataFromFile", String.class);
-        assertEquals("Add try-catch blocks to your writeToFile method. Handle any possible exceptions within the method.", 0, mRead.getExceptionTypes().length);
-
-        Method fileio = Q1.getMethod("fileIO");
-        assertEquals("Add try-catch blocks to your file reading and writing methods. Handle any possible exceptions within the method.", 0, fileio.getExceptionTypes().length);
-
-        Method main = Q1.getMethod("main", String[].class);
-        assertEquals("Add try-catch blocks to your file reading and writing methods. Handle any possible exceptions within the method.", 0, main.getExceptionTypes().length);
-
+        Class q1 = Class.forName("week_6.Question_1_Write_Name_Color_Class_Code");
+        
+        Method[] methods = q1.getDeclaredMethods();
+        
+        Arrays.stream(methods).forEach( m -> {
+            String methodName = m.getName();
+            assertEquals( methodName + " should not declare that it throws an exception. " +
+                            "\nAdd try-catch blocks to your writeToFile and printDataFromFile methods. " +
+                            "\nHandle any possible exceptions within the method.",
+                    0, m.getExceptionTypes().length);
+        });
     }
 
 
