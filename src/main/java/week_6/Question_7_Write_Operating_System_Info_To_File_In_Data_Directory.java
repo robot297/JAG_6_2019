@@ -1,5 +1,9 @@
 package week_6;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
 /**
  *
  **The short version**:
@@ -15,9 +19,9 @@ package week_6;
  The file called `placeholder.file` in the data directory may be ignored, and should not affect this assignment.
  The text in the file should explain why it's there.
  
- Make sure you catch and handle any exceptions.
+ Make sure you catch and handle any exceptions in the `writeOSName` method.
  
- Test your program on a Windows and a Mac or Linux computer. There are Macs and PCs in the hallway outside T3050.
+ Test your program on a Windows and a Mac/Linux computer. There are Macs and PCs in the hallway outside T.3050.
  
  **The long version**:
  
@@ -30,14 +34,13 @@ package week_6;
  these files into an images directory, and a data directory.
  
  For this question, write a program that creates and stores a file in the data directory. The file should be called
- `os.txt` and should  contain your computer's operating system name.
+ `os.txt` and should contain your computer's operating system name.
  
  FileWriter can take a filename as an argument. The filename can only be a file in your current directory.
- So this doesn't work:
+ So these don't work:
  
- 
- new FileWriter fw = new FileWriter(“data/testing.txt”);   // Error
- 
+ new FileWriter fw = new FileWriter(“data/testing.txt”);   // Mac or Linux / Error
+ new FileWriter fw = new FileWriter(“data\testing.txt”);   // Windows \ Error
  
  But, FileWriter can also take a File object as an argument, and a File object can store a path to a file
  elsewhere on your system (or even on a remote system).
@@ -47,15 +50,11 @@ package week_6;
  
  Here’s one way to create a File object on a Mac, Linux, Unix etc. system; using / as a path separator, for example,
  
- 
  File f = new File(“mydirectory/mysubdirectory/textfile.txt”);
- 
  
  Or on a PC, which uses backslash as the path separator, for example,
  
- 
  File f = new File(“mydirectory\mysubdirectory\textfile.txt”);
- 
  
  Assuming these directories exist, you can create and write `textfile.txt` file in this location.  The location
  is relative to the root directory of your project.
@@ -77,23 +76,21 @@ package week_6;
  
  2. Or, a cleaner approach: create a File object with the File(parentDirectory, filename) constructor. For example,
  
- 
- File f = new File("mydirectory", "myfilename");
- 
+ File f = new File("mydirectory", "MyFileName.txt");
  
  Java will check the system properties for you, and construct the correct path for the computer.
  
- For more information, see the Java File documentation. https://docs.oracle.com/javase/8/docs/api/java/io/File.html
+ For more information, see the Java File documentation. https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/io/File.html
  
- ( Note: In general, it is possible, but **not recommended**, to use absolute path names, for example
+ Note: In general, it is possible, but **not recommended**, to use absolute path names, for example
  
  C:\program files\java\textfile.txt on Windows, or
- /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac,
+ /users/admin/Documents/textfile.txt on a Unix-based system like Linux or Mac.
  
- but if you do that, your program will almost certainly not work on anyone else's computer. And, the tests will fail. )
+ but if you do that, your program will almost certainly not work on anyone else's computer.
+ And, the tests will fail when the grader runs them.
 
  */
-
 
 public class Question_7_Write_Operating_System_Info_To_File_In_Data_Directory {
     
@@ -106,13 +103,15 @@ public class Question_7_Write_Operating_System_Info_To_File_In_Data_Directory {
         
         // TODO write the name of the operating system running this code to a file
         //  in the data directory called os.txt
+        
         // The file has to be written in the data directory of this project
-        // Use system properties to get the operating system name.
-        // Remember this exact same code needs to work on a Mac and Windows computer without any modifications.
+        // Use System Properties to get the operating system name.
+        // Remember this exact same code needs to work on a Mac/Linux and Windows computer without any modifications.
         
         // Handle any exceptions in this method. Do not declare that this method throws any exceptions.
         
-        // Test your code on both types of operating systems: Windows, and Mac/Linux.
+        // Test your code on two types of operating systems: Windows, and Mac/Linux.
+        
     }
     
 }
