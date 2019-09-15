@@ -14,9 +14,27 @@ Add try-catch blocks for IOException to the writing code, and the reading code. 
 
 ### Question 2 Write Recycling Report
 
-Start with your recycling truck program from last week. Add code so that it writes the data as a report to a file. The report file will look something like this example,
-N
-ote that it should use "crate" for 1 crate, "crates" otherwise.
+You work for a recycling company.
+You’d like to collect some statistics on how much each of the houses on a certain street is recycling.
+Each house has to use crates for their recycling. Your program will count the number of crates set out by each house.
+
+This street is a little unusual since it only has 8 houses, and the city planner
+must have been a computer programmer, since the house numbers are 0, 1, 2, 3, 4, 5, 6, and 7.
+(Hint – the house numbers are the same as array element indexes.)
+
+Write a program that asks for the number of recycling crates set out by each house.
+You should store, and process this data, in an array.
+DON'T use an ArrayList or LinkedList!
+
+Analyse your data and determine:
+* How many recycling crates, in total, from all the houses on the street?
+* What is the largest number of crates set out by any house?
+* What is the smallest number of crates set out by any house?
+* Which house had the most recycling? Display that house number.
+
+Next, add code so that it writes the data as a report to a file. 
+The report file will look something like this example,
+Note that it should use "crate" for 1 crate, "crates" otherwise.
 
 ```
 House 0 recycled 1 crate
@@ -29,7 +47,6 @@ House 6 recycled 2 crates
 House 7 recycled 1 crate
 
 Total crates recycled: 15
-
 ```
 
 Use try-catch blocks for IOException. Use the try-with-resources style.
