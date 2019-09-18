@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="replace temporary_directory_for_test_files + placeholder">
-      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" afterDir="false" />
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="ensure test directory does exist">
+      <change afterPath="$PROJECT_DIR$/temporary_directory_for_test_files/placeholder.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -564,14 +564,7 @@
       <workItem from="1548815331853" duration="800000" />
       <workItem from="1568496458917" duration="10539000" />
       <workItem from="1568520386478" duration="769000" />
-      <workItem from="1568826426865" duration="302000" />
-    </task>
-    <task id="LOCAL-00004" summary="w5 Q1, Q2">
-      <created>1501716284627</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1501716284627</updated>
+      <workItem from="1568826426865" duration="506000" />
     </task>
     <task id="LOCAL-00005" summary="w5 Q3">
       <created>1501773913987</created>
@@ -909,7 +902,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568826505332</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="ensure test directory does exist">
+      <created>1568826867061</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568826867062</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -951,7 +951,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="README" />
     <MESSAGE value="Grades" />
     <MESSAGE value="Name" />
     <MESSAGE value="Fix tests for windows" />
@@ -976,7 +975,8 @@
     <MESSAGE value="remove imports" />
     <MESSAGE value="replace temporary_directory_for_test_files" />
     <MESSAGE value="replace temporary_directory_for_test_files + placeholder" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace temporary_directory_for_test_files + placeholder" />
+    <MESSAGE value="ensure test directory does exist" />
+    <option name="LAST_COMMIT_MESSAGE" value="ensure test directory does exist" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

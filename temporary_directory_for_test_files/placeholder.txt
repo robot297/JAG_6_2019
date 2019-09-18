@@ -1,0 +1,3 @@
+this file is only here to make temporary_directory_for_test_files not empty.
+
+Git ignores empty directories, and since the tests use this directory, it should be present in your repository.
