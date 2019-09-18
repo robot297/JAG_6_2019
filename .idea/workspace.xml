@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="rename packages">
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="remove imports">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab 6 Questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 6 Questions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_6/Question_7_Write_Operating_System_Info_To_File_In_Data_Directory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest">
+  <component name="RunManager" selected="JUnit.week_6 in Java Autograder Lab 6">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -386,23 +385,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Question_2_Write_Recycling_ReportTest.testWriteReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java Autograder Lab 6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week_6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week_6" />
-      <option name="MAIN_CLASS_NAME" value="week_6.Question_2_Write_Recycling_ReportTest" />
-      <option name="METHOD_NAME" value="testWriteReport" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Question_3_Read_Recycling_ReportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
@@ -437,6 +419,21 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="week_6 in Java Autograder Lab 6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java Autograder Lab 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -517,19 +514,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest" />
-      <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest.testWriteReport" />
-      <item itemvalue="JUnit.Question_3_Read_Recycling_ReportTest" />
       <item itemvalue="Application.Question_7_Write_Operating_System_Info_To_File_In_Data_Directory" />
+      <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest" />
+      <item itemvalue="JUnit.Question_3_Read_Recycling_ReportTest" />
       <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
+      <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
         <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
         <item itemvalue="Application.Question_7_Write_Operating_System_Info_To_File_In_Data_Directory" />
         <item itemvalue="JUnit.Question_3_Read_Recycling_ReportTest" />
         <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest" />
-        <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest.testWriteReport" />
       </list>
     </recent_temporary>
   </component>
@@ -565,14 +562,8 @@
       <workItem from="1541350861087" duration="2103000" />
       <workItem from="1544566978303" duration="934000" />
       <workItem from="1548815331853" duration="800000" />
-      <workItem from="1568496458917" duration="10323000" />
-    </task>
-    <task id="LOCAL-00001" summary="Start of week 5">
-      <created>1496361654279</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1496361654279</updated>
+      <workItem from="1568496458917" duration="10539000" />
+      <workItem from="1568520386478" duration="769000" />
     </task>
     <task id="LOCAL-00002" summary="w5 Q1 done">
       <created>1496362622987</created>
@@ -903,7 +894,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568517686172</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Q7">
+      <created>1568518318008</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1568518318008</updated>
+    </task>
+    <task id="LOCAL-00050" summary="remove imports">
+      <created>1568518348538</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1568518348542</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -926,7 +931,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -943,8 +950,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Placeholder file to make git include the /data/ directory in the project" />
-    <MESSAGE value="Minor changes to descriptions, cleanup, test fail messages etc." />
     <MESSAGE value="More cleanup" />
     <MESSAGE value="Q9 make test more flexible" />
     <MESSAGE value="README" />
@@ -968,7 +973,9 @@
     <MESSAGE value="q2" />
     <MESSAGE value="q4" />
     <MESSAGE value="rename packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename packages" />
+    <MESSAGE value="Q7" />
+    <MESSAGE value="remove imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove imports" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
