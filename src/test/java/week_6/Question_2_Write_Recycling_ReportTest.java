@@ -1,5 +1,6 @@
 package week_6;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.*;
@@ -13,7 +14,12 @@ import static org.junit.Assert.*;
 public class Question_2_Write_Recycling_ReportTest {
     
     private File tempFileDirectory = new File("temporary_directory_for_test_files");
-
+    
+    @Before()
+    public void ensureTempDirectoryExists() {
+        tempFileDirectory.mkdir();
+    }
+    
     @Test(timeout=3000)
     public void testWriteReport() {
 

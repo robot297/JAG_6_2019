@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="remove imports">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="replace temporary_directory_for_test_files + placeholder">
+      <change beforePath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week_6/Question_1_Write_Name_Color_Class_CodeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.week_6 in Java Autograder Lab 6">
+  <component name="RunManager" selected="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -369,7 +368,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Question_2_Write_Recycling_ReportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java Autograder Lab 6" />
       <extension name="coverage">
         <pattern>
@@ -378,8 +377,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week_6" />
-      <option name="MAIN_CLASS_NAME" value="week_6.Question_2_Write_Recycling_ReportTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="week_6.Question_1_Write_Name_Color_Class_CodeTest" />
+      <option name="METHOD_NAME" value="testWriteToFile" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -515,18 +515,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Question_7_Write_Operating_System_Info_To_File_In_Data_Directory" />
-      <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest" />
       <item itemvalue="JUnit.Question_3_Read_Recycling_ReportTest" />
       <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
       <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
+      <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Question_1_Write_Name_Color_Class_CodeTest.testWriteToFile" />
         <item itemvalue="JUnit.week_6 in Java Autograder Lab 6" />
         <item itemvalue="JUnit.Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest" />
         <item itemvalue="Application.Question_7_Write_Operating_System_Info_To_File_In_Data_Directory" />
         <item itemvalue="JUnit.Question_3_Read_Recycling_ReportTest" />
-        <item itemvalue="JUnit.Question_2_Write_Recycling_ReportTest" />
       </list>
     </recent_temporary>
   </component>
@@ -564,20 +564,7 @@
       <workItem from="1548815331853" duration="800000" />
       <workItem from="1568496458917" duration="10539000" />
       <workItem from="1568520386478" duration="769000" />
-    </task>
-    <task id="LOCAL-00002" summary="w5 Q1 done">
-      <created>1496362622987</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1496362622987</updated>
-    </task>
-    <task id="LOCAL-00003" summary="w5 Q1 done">
-      <created>1496362698283</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1496362698283</updated>
+      <workItem from="1568826426865" duration="302000" />
     </task>
     <task id="LOCAL-00004" summary="w5 Q1, Q2">
       <created>1501716284627</created>
@@ -908,7 +895,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568518348542</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="replace temporary_directory_for_test_files">
+      <created>1568826488863</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1568826488866</updated>
+    </task>
+    <task id="LOCAL-00052" summary="replace temporary_directory_for_test_files + placeholder">
+      <created>1568826505332</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1568826505332</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -950,8 +951,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="More cleanup" />
-    <MESSAGE value="Q9 make test more flexible" />
     <MESSAGE value="README" />
     <MESSAGE value="Grades" />
     <MESSAGE value="Name" />
@@ -975,7 +974,9 @@
     <MESSAGE value="rename packages" />
     <MESSAGE value="Q7" />
     <MESSAGE value="remove imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove imports" />
+    <MESSAGE value="replace temporary_directory_for_test_files" />
+    <MESSAGE value="replace temporary_directory_for_test_files + placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace temporary_directory_for_test_files + placeholder" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

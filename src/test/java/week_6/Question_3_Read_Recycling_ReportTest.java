@@ -1,10 +1,10 @@
 package week_6;
 
+import org.junit.Before;
 import org.junit.Test;
 import test_utils.ArrayListUtils;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.nio.file.Files;
@@ -19,6 +19,12 @@ import static org.junit.Assert.*;
 public class Question_3_Read_Recycling_ReportTest {
     
     private File tempFileDirectory = new File("temporary_directory_for_test_files");
+    
+    @Before()
+    public void ensureTempDirectoryExists() {
+        tempFileDirectory.mkdir();
+    }
+    
     
     @Test(timeout=3000)
     public void readRecyclingFile() {

@@ -1,5 +1,6 @@
 package week_6;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.*;
@@ -14,6 +15,7 @@ import static org.junit.Assert.*;
  * Created by clara on 8/3/17.
  */
 public class Question_7_Write_Operating_System_Info_To_File_In_Data_DirectoryTest {
+    
 
     @Test(timeout=3000)
     public void writeOSName()  {
