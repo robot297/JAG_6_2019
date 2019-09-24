@@ -55,7 +55,7 @@ public class Question_5_Add_Exception_HandlingTest {
         // Read source code and check that a try-catch statement has been added
         // Not something that would be done in a commercial test :)
         
-        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_6", "Question_5_Add_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         String line = reader.readLine();
@@ -118,7 +118,7 @@ public class Question_5_Add_Exception_HandlingTest {
         // Read source code and check that a try-catch statement has been added
         // Not something that would be done in a commercial test :)
         
-        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_5_Add_Exception_Handling.java");
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_6", "Question_5_Add_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         String line = reader.readLine();

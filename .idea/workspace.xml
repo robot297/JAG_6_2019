@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="ensure test directory does exist">
-      <change afterPath="$PROJECT_DIR$/temporary_directory_for_test_files/placeholder.txt" afterDir="false" />
-    </list>
+    <list default="true" id="973dfb87-52db-448c-966c-e7a5a696eb0a" name="Default" comment="test directory and placeholder file" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -564,14 +562,7 @@
       <workItem from="1548815331853" duration="800000" />
       <workItem from="1568496458917" duration="10539000" />
       <workItem from="1568520386478" duration="769000" />
-      <workItem from="1568826426865" duration="506000" />
-    </task>
-    <task id="LOCAL-00005" summary="w5 Q3">
-      <created>1501773913987</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1501773913987</updated>
+      <workItem from="1568826426865" duration="539000" />
     </task>
     <task id="LOCAL-00006" summary="w5 Q4 questions&#10;">
       <created>1501794393553</created>
@@ -909,7 +900,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568826867062</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="test directory and placeholder file">
+      <created>1568826958785</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568826958785</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -951,7 +949,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Grades" />
     <MESSAGE value="Name" />
     <MESSAGE value="Fix tests for windows" />
     <MESSAGE value="Examples for word count" />
@@ -976,7 +973,8 @@
     <MESSAGE value="replace temporary_directory_for_test_files" />
     <MESSAGE value="replace temporary_directory_for_test_files + placeholder" />
     <MESSAGE value="ensure test directory does exist" />
-    <option name="LAST_COMMIT_MESSAGE" value="ensure test directory does exist" />
+    <MESSAGE value="test directory and placeholder file" />
+    <option name="LAST_COMMIT_MESSAGE" value="test directory and placeholder file" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

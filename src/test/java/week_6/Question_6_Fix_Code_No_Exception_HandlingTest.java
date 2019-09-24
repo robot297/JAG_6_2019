@@ -69,7 +69,7 @@ public class Question_6_Fix_Code_No_Exception_HandlingTest {
         
         // Read source code and check that try-catch statements have not been added
         // Not something that would be done in a commercial test :)
-        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_5", "Question_6_Fix_Code_No_Exception_Handling.java");
+        String path = String.join(System.getProperty("file.separator"), "src", "main", "java", "week_6", "Question_6_Fix_Code_No_Exception_Handling.java");
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         
         
