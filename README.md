@@ -1,4 +1,4 @@
-## Java Lab 5, Files and Exceptions
+## Java Lab 6, Files and Exceptions
 
 Instructions:
 
